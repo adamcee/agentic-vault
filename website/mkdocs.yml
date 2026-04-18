@@ -1,0 +1,51 @@
+site_name: The Agentic Vault
+site_description: A domain-agnostic, AI-native knowledge base template designed to stop context loss and hallucination in LLM coding and planning sessions.
+site_author: The Crusty Engineer
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - roamlinks
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Installation:
+    - Quickstart: installation/quickstart.md
+    - The AI Setup Wizard: installation/wizard.md
+  - The Methodology:
+    - The SYSTEM.md Primacy: methodology/system-primacy.md
+    - Decision Records (ADRs/PDRs): methodology/decision-records.md
+    - AI Writing Discipline: methodology/writing-discipline.md
+  - The Example Vault (BrewTrack): example/
