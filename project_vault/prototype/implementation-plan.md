@@ -36,3 +36,4 @@ This is the vault ledger for building the Agentic Vault template project.
 - [ ] Add a best-practice research doc (written by Claude) on the vault methodology, principles, and how it works to the project.
 - [ ] Extract the `project_vault/` into a separate repository and build a beautiful, public Quartz site for it. Link it back to the main repository.
 - [ ] Research and document a good Windows alternative to Obsidian, other general Obsidian alternatives, and a web-based note-taking alternative to give users multiple tooling options.
+- [ ] Fix the BrewTrack example vault links (they currently route back to the homepage).
