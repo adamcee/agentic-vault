@@ -15,15 +15,16 @@ The **Agentic Vault** solves this. It is an AI-native project knowledge base. It
 
 ## 🗂️ Repository Structure
 
-This repository contains the entire Agentic Vault ecosystem. 
+This repository contains the Agentic Vault ecosystem. 
 
 ```text
 /
 ├── template/                  ← The pristine, reusable vault template.
 ├── example/                   ← A populated example (BrewTrack app) showing ADRs in action.
-├── website/                   ← The MkDocs documentation hub source code.
-└── project_vault/             ← The meta-vault we used to build this project!
+└── website/                   ← The MkDocs documentation hub source code.
 ```
+
+*Note: The meta-vault we used to build this project (a live case study of the methodology) has been extracted into its own interactive Quartz site. You can explore it at the [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta) repository.*
 
 **If you just want to use the template:** Copy the `template/` directory or run `./template/scripts/init-vault.sh my-new-project`.
 
