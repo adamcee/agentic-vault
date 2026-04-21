@@ -1,6 +1,7 @@
 site_name: The Agentic Vault
 site_description: A domain-agnostic, AI-native knowledge base template designed to stop context loss and hallucination in LLM coding and planning sessions.
 site_author: The Crusty Engineer
+site_url: https://adamcee.github.io/agentic-vault/
 
 theme:
   name: material
