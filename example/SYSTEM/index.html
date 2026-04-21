@@ -1,0 +1,1186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A domain-agnostic, AI-native knowledge base template designed to stop context loss and hallucination in LLM coding and planning sessions.">
+      
+      
+        <meta name="author" content="The Crusty Engineer">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>SYSTEM.md — BrewTrack Master Context - The Agentic Vault</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#systemmd-brewtrack-master-context" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The Agentic Vault" class="md-header__button md-logo" aria-label="The Agentic Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Agentic Vault
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SYSTEM.md — BrewTrack Master Context
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../installation/quickstart/" class="md-tabs__link">
+          
+  
+  Installation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../methodology/design-and-goals/" class="md-tabs__link">
+          
+  
+  The Methodology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+    
+  
+  The Example Vault (BrewTrack)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The Agentic Vault" class="md-nav__button md-logo" aria-label="The Agentic Vault" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    The Agentic Vault
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/quickstart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quickstart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/wizard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The AI Setup Wizard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/tooling-alternatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tooling Alternatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Methodology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            The Methodology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/design-and-goals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design & Goals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/system-primacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The SYSTEM.md Primacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/session-protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Session Protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/decision-records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decision Records (ADRs/PDRs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/reweave-protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Reweave Protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/research-traceability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Research Traceability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/evidence-maturity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evidence Maturity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/wikilink-discipline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wikilink Discipline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/ideas-lifecycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Ideas Lifecycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/ingestion-gate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Ingestion Gate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/personas-as-constraint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas as Constraint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/writing-discipline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Writing Discipline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sources & Further Reading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Example Vault (BrewTrack)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#last-session-checkpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔖 Last session checkpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-this-file-gets-loaded" class="md-nav__link">
+    <span class="md-ellipsis">
+      How This File Gets Loaded
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How This File Gets Loaded">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#session-start-find-new-modified-docs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Session-Start: Find New / Modified Docs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hard-constraints-never-violate-without-an-adr" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Hard Constraints — Never Violate Without an ADR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-interaction-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Interaction Style
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-discipline-multi-agent-interoperability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Discipline &amp; Multi-Agent Interoperability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-brewtrack-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      What BrewTrack Is
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vault-topology-stack-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vault Topology &amp; Stack Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-specific-context-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task-Specific Context Loading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standing-decisions-do-not-relitigate-without-new-adr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standing Decisions (Do Not Relitigate Without New ADR)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-architectural-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Architectural Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-records-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Records Index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-propagation-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Propagation Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reweave-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reweave Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-task-completion-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Task Completion Gate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-traceability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Traceability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session History
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="systemmd-brewtrack-master-context"><a href="./">SYSTEM</a>.md — BrewTrack Master Context</h1>
+<p><em>Load this file first in every AI session. Updated: 2026-04-17</em></p>
+<h2 id="last-session-checkpoint">🔖 Last session checkpoint</h2>
+<p>On 2026-04-17, decided to move forward with React Native for the mobile app (ADR-T001) and established the gamified points system (PDR-P001).</p>
+<p><em>See <code>journal/</code> for daily notes or <code>prototype/implementation-logs/</code> for full session histories.</em></p>
+<hr />
+<h2 id="how-this-file-gets-loaded">How This File Gets Loaded</h2>
+<ul>
+<li><strong>Claude Code:</strong> reads via <code>CLAUDE.md</code> pointer</li>
+<li><strong>Gemini CLI:</strong> reads via <code>GEMINI.md</code> pointer</li>
+<li><strong>Cursor / Windsurf:</strong> reads via <code>.cursorrules</code> / <code>.windsurfrules</code> pointers</li>
+<li><strong>Claude Desktop / Cowork:</strong> reads via Obsidian MCP</li>
+</ul>
+<p>Regardless of access method: read this file before any substantive session. Do not rely on the project prompt or memory for details — the vault is the source of truth.</p>
+<h3 id="session-start-find-new-modified-docs">✅ Session-Start: Find New / Modified Docs</h3>
+<p>At the start of any session, check for files modified since the last session date:
+- <strong>MCP:</strong> <code>obsidian_global_search(query=".", useRegex=true, modified_since="2026-04-17")</code>
+- <strong>CLI:</strong> <code>git log -1 --before="2026-04-17" --format=%H</code> then <code>git diff</code></p>
+<hr />
+<h2 id="hard-constraints-never-violate-without-an-adr">⚠️ Hard Constraints — Never Violate Without an ADR</h2>
+<ul>
+<li><strong>journal/ is human-only</strong> — never write to <code>journal/</code> for any reason. Human owner's personal daily record. Read-only for AI.</li>
+<li><strong>Terse by default</strong> — vault documents follow the Paragraph Ban, BLUF discipline, and the 7-point tightening checklist (see Writing Discipline section). </li>
+<li><strong>Wikilink discipline</strong> — when editing any vault document, use <code>[[wikilinks]]</code> to connect references to their canonical vault location. Every claim that rests on a research doc, ADR, or strategy section should link to it.</li>
+<li><strong>Action items route to the vault ledger only.</strong> AI sessions route new action items to <code>prototype/implementation-plan.md</code> (or equivalent task tracker). </li>
+<li><strong>No orphan checkboxes.</strong> <code>- [ ]</code> task checkboxes for tracking completion appear only in canonical task lists, never scattered across standard documents.</li>
+<li><strong>Drafts ingestion gate.</strong> All AI-generated content lands in <code>drafts/</code> first — never directly into the vault. No document moves from <code>drafts/</code> into the vault without passing the tightening checklist.</li>
+</ul>
+<hr />
+<h2 id="session-interaction-style">Session Interaction Style</h2>
+<p><strong>Proactive suggestions encouraged.</strong> During conversations, proactively share advice, ideas, design patterns, or potential pitfalls. Keep suggestions concise and clearly separated from the main task. Focus on technical rationale. Avoid conversational filler, apologies, and mechanical tool-use narration (e.g., "I will now call...").</p>
+<hr />
+<h2 id="writing-discipline-multi-agent-interoperability">Writing Discipline &amp; Multi-Agent Interoperability</h2>
+<p>All vault documents are treated as high-leverage state machines for multi-agent LLM parsing. </p>
+<p><strong>Tightening Checklist:</strong> Every document written or substantially edited by an AI agent must pass this checklist before the task is marked complete:
+1. First sentence is BLUF (Bottom Line Up Front — core claim).
+2. No paragraph exceeds 2 sentences (research exception: single-thought paragraphs permitted).
+3. No narrative preamble before a self-explanatory table or list.
+4. No stacked near-synonymous adjectives.
+5. No meta-commentary in document body ("This section covers...").
+6. ADRs/PDRs contain no implementation specs or multi-line code blocks.
+7. Executive summaries ≤ 12 lines.
+8. No reified observations (abstract differences named, capitalized, or declared as principles).
+9. No sentence fragments. Every sentence has a subject and a verb.
+10. No em-dash clusters (max one per paragraph).</p>
+<hr />
+<h2 id="what-brewtrack-is">What BrewTrack Is</h2>
+<p>BrewTrack is a mobile loyalty application designed for independent local coffee shops. It allows small cafes to compete with massive corporate rewards programs (like Starbucks) by offering a white-labeled, beautifully designed digital punch card. </p>
+<p>The primary domain focuses on low-friction transactions at the point of sale (QR code scanning) and gamified retention mechanics that encourage repeat business.</p>
+<hr />
+<h2 id="current-phase">Current Phase</h2>
+<p><strong>Phase 1: Proof of Concept App</strong>
+Building the initial React Native mobile app and the Python/FastAPI backend. Focusing entirely on the QR code generation and the basic points tallying for a single cafe.</p>
+<hr />
+<h2 id="vault-topology-stack-reference">Vault Topology &amp; Stack Reference</h2>
+<p>See <strong><code>AGENTS.md</code></strong> for the directory structure, stack reference, and agentic boundaries.</p>
+<hr />
+<h2 id="task-specific-context-loading">Task-Specific Context Loading</h2>
+<ul>
+<li><strong>Coding session:</strong> Load <code>AGENTS.md</code>, <code>architecture/CONSTITUTION.md</code>, active spec from <code>prototype/specs/</code>, relevant ADRs.</li>
+<li><strong>Architecture decision:</strong> Load <code>decisions/technical/</code> index, <code>architecture/CONSTITUTION.md</code>.</li>
+<li><strong>Strategy/Research:</strong> Load <code>strategy/</code>, <code>research/</code> folders as relevant.</li>
+<li><strong>Vault maintenance:</strong> Load <code>vault-guide/</code> files.</li>
+</ul>
+<hr />
+<h2 id="standing-decisions-do-not-relitigate-without-new-adr">Standing Decisions (Do Not Relitigate Without New ADR)</h2>
+<ul>
+<li><strong>Mobile Framework:</strong> React Native (Expo) - Selected for rapid cross-platform deployment.</li>
+<li><strong>Backend Framework:</strong> Python (FastAPI) - Selected for development speed and typing support.</li>
+<li><strong>Database:</strong> PostgreSQL - Handled via async SQLAlchemy.</li>
+<li><strong>No hardware integration:</strong> We do not integrate with POS systems directly; the barista scans the customer's phone camera.</li>
+</ul>
+<hr />
+<h2 id="key-architectural-concepts">Key Architectural Concepts</h2>
+<p>See <code>concepts/</code> for full atomic definitions. </p>
+<hr />
+<h2 id="decision-records-index">Decision Records Index</h2>
+<p>All major decisions have ADRs or PDRs. Before proposing any architectural or product change, check:
+- <code>/decisions/technical/</code> for stack/architecture decisions
+- <code>/decisions/product/</code> for product/pedagogical decisions</p>
+<p><strong>How to search decisions:</strong> Query the <code>status</code> or <code>tags</code> in YAML frontmatter rather than reading all files. (e.g., <code>obsidian search query="[status: accepted]" path="decisions/"</code>).</p>
+<hr />
+<h2 id="decision-propagation-protocol">Decision Propagation Protocol</h2>
+<p><strong>Trigger:</strong> Any new decision (ADR, PDR, tool adoption, architectural change).
+<strong>Rule:</strong> Do not mark the task complete until every checkbox below is done or marked N/A.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Write the ADR/PDR in <code>decisions/technical/</code> or <code>decisions/product/</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Update <code>prototype/implementation-plan.md</code> </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Append session log entry</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Update <code>architecture/CONSTITUTION.md</code> (if it touches invariants)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Check companion docs for consistency</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Update <code>SYSTEM.md</code> (only if it changes Standing Decisions or Context Loading)</li>
+</ul>
+<hr />
+<h2 id="reweave-protocol">Reweave Protocol</h2>
+<p><strong>Trigger:</strong> New information arrives (research doc, competitive intel, strategy shift).
+<strong>Rule:</strong> Do not mark the task complete until every checkbox below is done.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Identify affected docs.</strong> Search the vault for existing ADRs, strategy, or architecture docs the new info touches.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Classify impact:</strong> <em>Strengthened</em> (add link), <em>Weakened</em> (add note), or <em>Invalidated</em> (flag for human, propose new ADR).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Add <code>## Reweave Triggers</code></strong> to the new document listing affected vault files with <code>[[wikilinks]]</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>Route action items to plans.</strong> </li>
+</ul>
+<hr />
+<h2 id="post-task-completion-gate">Post-Task Completion Gate</h2>
+<p><strong>Before marking any substantive task complete, run this checklist.</strong> </p>
+<table>
+<thead>
+<tr>
+<th>Did the task…</th>
+<th>Then you must…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Produce a new research doc?</td>
+<td>Run the Reweave Protocol.</td>
+</tr>
+<tr>
+<td>Make a decision (ADR/PDR)?</td>
+<td>Run the Decision Propagation Protocol.</td>
+</tr>
+<tr>
+<td>Generate action items?</td>
+<td>Route to <code>implementation-plan.md</code>.</td>
+</tr>
+<tr>
+<td>Write or edit any vault doc?</td>
+<td>Run the 10-point tightening checklist.</td>
+</tr>
+<tr>
+<td>Create or edit <code>[[wikilinks]]</code>?</td>
+<td>Verify all targets resolve.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="research-traceability">Research Traceability</h2>
+<p>Every empirical claim in an ADR, strategy doc, or architecture doc should be traceable to a specific research document in the vault. 
+Format: <code>claim text ([research/source-doc-name](&lt;../research/source-doc-name.md&gt;) [maturity-tag])</code></p>
+<p>Tags: <code>[established]</code>, <code>[supported]</code>, <code>[emerging]</code>, <code>[theoretical]</code>.</p>
+<hr />
+<h2 id="session-history">Session History</h2>
+<p>Full session history: [[session-history]]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
