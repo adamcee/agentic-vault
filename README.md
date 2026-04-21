@@ -63,3 +63,11 @@ Don't want to fill out the boilerplate yourself? Let your AI do it.
 2. Copy the entire prompt.
 3. Paste it into your AI of choice (Claude, Gemini, Cursor) while in your new project directory.
 4. The AI will ask you a few questions about your project and autonomously populate `SYSTEM.md`, `AGENTS.md`, and `CONSTITUTION.md` for you!
+
+---
+
+## Design & Goals
+
+AI models are powerful thought partners that forget between sessions. On projects that last longer than a single chat, this amnesia causes decisions to be relitigated and rejected ideas to resurface. The Agentic Vault solves this by treating the project folder as the single source of truth—complete with standing decisions, research traceability, and strict writing discipline.
+
+For a comprehensive dive into the philosophy, protocols, and field tests that shaped this methodology, read the full [Design & Goals](website/docs/methodology/design-and-goals.md) document.

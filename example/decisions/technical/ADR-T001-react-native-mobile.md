@@ -25,4 +25,4 @@ We will use **React Native** managed by **Expo** for all mobile application deve
 ## Consequences
 - We will be constrained by the libraries supported by the Expo ecosystem, although Expo's recent updates to custom dev clients mitigate this.
 - Rapid deployment and Over-The-Air (OTA) updates are possible via Expo Application Services (EAS).
-- Reaffirms [[CONSTITUTION]] clause S1.
+- Reaffirms [CONSTITUTION](../../architecture/CONSTITUTION.md) clause S1.

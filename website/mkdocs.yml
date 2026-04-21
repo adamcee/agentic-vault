@@ -44,8 +44,19 @@ nav:
   - Installation:
     - Quickstart: installation/quickstart.md
     - The AI Setup Wizard: installation/wizard.md
+    - Tooling Alternatives: installation/tooling-alternatives.md
   - The Methodology:
+    - Design & Goals: methodology/design-and-goals.md
     - The SYSTEM.md Primacy: methodology/system-primacy.md
+    - The Session Protocol: methodology/session-protocol.md
     - Decision Records (ADRs/PDRs): methodology/decision-records.md
+    - The Reweave Protocol: methodology/reweave-protocol.md
+    - Research Traceability: methodology/research-traceability.md
+    - Evidence Maturity: methodology/evidence-maturity.md
+    - Wikilink Discipline: methodology/wikilink-discipline.md
+    - The Ideas Lifecycle: methodology/ideas-lifecycle.md
+    - The Ingestion Gate: methodology/ingestion-gate.md
+    - Personas as Constraint: methodology/personas-as-constraint.md
     - AI Writing Discipline: methodology/writing-discipline.md
-  - The Example Vault (BrewTrack): example/
+    - Sources & Further Reading: methodology/sources.md
+  - The Example Vault (BrewTrack): example/README.md
