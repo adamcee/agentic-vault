@@ -48,18 +48,6 @@
 - **Simon Willison**, [*Things I've learned about working with LLMs*](https://simonwillison.net/tags/llms/). A running log of practical observations on working with large language models. Not cited in any specific protocol, but consistently useful as a reality-check on what these tools can and cannot do.
 - **Andrej Karpathy**, various Twitter threads on LLM-assisted software development. The idea of *"English is the new programming language"* and the associated observations about natural language as a high-level interface to compiled neural networks informs the methodology's treatment of prompts as code.
 
-## On Project-Specific Research (Chameleon)
-
-*These sources were consulted during the field test described in the Design & Goals document. They are listed here for readers who want to see the kind of research base the methodology is designed to accumulate and maintain.*
-
-- **Albert T. Corbett and John R. Anderson**, [*Knowledge tracing: Modeling the acquisition of procedural knowledge*](https://link.springer.com/article/10.1007/BF01099821) (*User Modeling and User-Adapted Interaction*, 1994). The original Bayesian Knowledge Tracing paper. Still the foundation for most deployed knowledge-tracing systems thirty years later — an `[established]` citation in the methodology's own usage.
-- **Sidney D'Mello and Arthur Graesser**, [*Dynamics of affective states during complex learning*](https://www.sciencedirect.com/science/article/abs/pii/S095947521100069X) (*Learning and Instruction*, 2012). Foundational work on the emotional states that arise during learning with intelligent tutoring systems.
-- **Paulo Freire**, [*Pedagogy of the Oppressed*](https://www.goodreads.com/book/show/72657.Pedagogy_of_the_Oppressed) (1968). The philosophical foundation for the methodology's commitment to *contestability* — the idea that the system's representation of the learner must be open to correction by the learner.
-- **Edward Deci and Richard Ryan**, [*Self-Determination Theory*](https://selfdeterminationtheory.org/). The ongoing research program on autonomy, competence, and relatedness as the foundations of motivation. Informs the methodology's treatment of personas and the design of learning interactions in the Chameleon field test.
-- **Benjamin S. Bloom**, [*The 2 Sigma Problem*](https://web.mit.edu/5.95/readings/bloom-two-sigma.pdf) (1984). The origin of the standing goal in educational technology: if one-to-one human tutoring produces two standard deviations of improvement over classroom instruction, what would it take to approximate that at scale? The methodology's field test project is one attempt at an answer.
-
-*Detailed research notes and full citations for the Chameleon-specific work live in the project vault. The project site itself is at [chameleon.ai](https://chameleon.ai) (if launched) or will be announced there when it is.*
-
 ---
 
 ## How to Suggest Additions
