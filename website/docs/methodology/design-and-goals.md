@@ -145,14 +145,6 @@ The synthesis is not academic. The rules were adopted because they made AI outpu
 
 The directory is the shortest-form memory in the methodology. It costs almost nothing to maintain and prevents the single most common form of relitigation.
 
-### 2.11. Personas as Design Constraint
-
-**The failure mode:** Personas written as marketing artifacts — a stock photo, a name, a list of demographics — cannot be used to reject design decisions. Any option can be justified against a vague persona. The persona document exists but does no work.
-
-**The protocol:** Personas are written with enough specificity that a design question can actually be answered against them. The wound is named concretely. The hidden competence is named. The affective signals are named. The resulting persona is a test case the design has to pass, not a reference for the pitch deck. Detail on [Personas as Design Constraint](../methodology/personas-as-constraint.md).
-
-This is the most project-specific of the protocols. On some projects (pure infrastructure, tooling), personas aren't the right unit and a different design constraint serves the same function. The generalization is: *the project needs a concrete target it can test decisions against, specific enough to reject options with.*
-
 ## 3. The Philosophy
 
 The protocols above are mechanics. Underneath them is a small set of commitments about how to use AI on work that matters.
