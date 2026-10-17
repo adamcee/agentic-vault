@@ -17,6 +17,7 @@
 
 ## On Writing Discipline
 
+- **International Organization for Standardization**, [*ISO 24495-1:2023 Plain language — Part 1: Governing principles and guidelines*](https://www.iso.org/standard/78907.html) (2023). The international plain language standard. Its four principles (relevant, findable, understandable, usable) frame the vault's writing rules.
 - **William Strunk Jr. and E. B. White**, [*The Elements of Style*](https://www.bartleby.com/141/) (1959 and later editions). Strunk's first edition is public domain and online; the edition expanded by White is the most widely read. Source of *"omit needless words"* and *"use the active voice."*
 - **U.S. Marine Corps**, [*MCDP-7 Learning*](https://www.marines.mil/Portals/1/Publications/MCDP%207.pdf) (2020). USMC doctrine on learning, cited for Commander's Intent.
 - **U.S. Army**, [*AR 25-50 Preparing and Managing Correspondence*](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PRODUCT_ID=1004725). The Army regulation for military correspondence, including Bottom Line Up Front (BLUF).

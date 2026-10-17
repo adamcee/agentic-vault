@@ -8,7 +8,7 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 
 ## How It Works
 
-1. **One master file.** `SYSTEM.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every session reads it first.
+1. **One master file.** `AGENTS.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every session reads it first.
 2. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why. The AI checks these before proposing changes.
 3. **Writing discipline.** Vault documents put the main point first and cut filler, so an AI can load more of the project in less context.
 
@@ -20,4 +20,4 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 - Find and recheck the decisions that new evidence affects.
 - Point coding agents in separate repos at the vault for constraints and decisions.
 
-Start with the [Quickstart](installation/quickstart.md), or browse the [BrewTrack example vault](example/README.md).
+Start with the [Quickstart](installation/quickstart.md), or browse the [example vaults](examples/README.md): a web app, a small business, and an indie game.

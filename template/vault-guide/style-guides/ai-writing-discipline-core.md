@@ -7,9 +7,16 @@ tags: [style-guide, writing-discipline, core]
 # AI Writing Discipline: Core Architecture
 
 ## BLUF
-All architectural, strategic, and decision-based vault documents must adhere to strict operational brevity to optimize multi-agent LLM parsing.
+Vault documents are written for a reader with no context, usually the next AI session. They follow ISO 24495-1 plain language and the rules below.
 
-## Architecture
+## Plain Language (ISO 24495-1:2023)
+A document is in plain language when its readers can:
+- **Get what they need** (relevant). Write for the reader's task and cut what doesn't serve it.
+- **Find it easily** (findable). Put the main point first and use headings that say what each section contains.
+- **Understand it** (understandable). Use familiar words, short sentences, and define terms on first use.
+- **Use it** (usable). The reader can act on the document without asking for clarification.
+
+## Rules
 - **Active Voice:** Use active voice exclusively. Omit needless words.
 - **BLUF (Bottom Line Up Front):** The core decision or insight must be the first sentence. Zero introductions.
 - **The Paragraph Ban:** Limit standard paragraphs to a maximum of two sentences. If a thought requires more, use a bulleted list with bolded lead-in terms.
@@ -20,6 +27,10 @@ All architectural, strategic, and decision-based vault documents must adhere to 
   - If a table or list is self-explanatory, do not precede it with a narrative paragraph.
 - **Grammatical Completeness:**
   - Write complete, grammatically correct sentences. Short sentences are good. Fragments are not.
+- **Define Terms on First Use:**
+  - Spell out an abbreviation or define a term of art the first time it appears in a document.
+- **Descriptive Headings:**
+  - A heading says what the section contains ("Pricing Is Per Visit"), not a vague label ("Discussion").
 - **Prefer Simpler Language:**
   - Use the plainest word that carries the meaning. "Different" over "inverted."
 - **No Reification:**

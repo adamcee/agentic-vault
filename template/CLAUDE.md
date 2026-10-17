@@ -1,10 +1,11 @@
-# Claude Code Instructions
+# CLAUDE.md
 
-**⚠️ MANDATORY:** You are operating in an Agentic Vault. Before answering the user or taking any action in a new session, you MUST read the master context file:
-`SYSTEM.md`
+Read [[AGENTS]].md before doing anything. It is the single source of truth for this vault.
 
-*(If you have access to the filesystem, use your file reading tool to load `SYSTEM.md` now.)*
+@AGENTS.md
 
-Once you have read `SYSTEM.md`, adhere to its instructions entirely. `SYSTEM.md` is the Single Source of Truth (SSOT) for this project.
+## Claude-Specific Notes
 
-*Tooling Note:* Use Obsidian MCP tools (`obsidian_read`, `obsidian_search`, `obsidian_create`) for efficient vault interactions if they are available in your environment.
+- Claude Code loads `AGENTS.md` through the `@AGENTS.md` import above. Other Claude surfaces should read it directly.
+- Vault skills live in `.claude/skills/`. Run `vault-start` at the start of each session.
+- In Claude Desktop, use Obsidian MCP tools (`obsidian_read`, `obsidian_search`, `obsidian_create`) if they are available.

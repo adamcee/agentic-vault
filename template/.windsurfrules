@@ -1,8 +1,5 @@
 # Windsurf Instructions
 
-**⚠️ MANDATORY:** You are operating in an Agentic Vault. Before answering the user or taking any action in a new session, you MUST read the master context file:
-`SYSTEM.md`
+Read `AGENTS.md` before answering or acting in a new session. It is the single source of truth for this vault, and its instructions override anything here.
 
-Once you have read `SYSTEM.md`, adhere to its instructions entirely. `SYSTEM.md` is the Single Source of Truth (SSOT) for this project.
-
-You may append your own learned, editor-specific rules to the bottom of this `.windsurfrules` file, but `SYSTEM.md` remains the primary source of truth for architectural, product, and structural decisions.
+Add Windsurf-specific rules below this line. Project decisions and constraints belong in `AGENTS.md`.

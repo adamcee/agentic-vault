@@ -58,11 +58,11 @@ On the project where the method was developed, the vault made the following rout
 
 Each protocol addresses one failure from Section 1.
 
-### 3.1. SYSTEM.md Primacy
+### 3.1. AGENTS.md Primacy
 
 **Failure:** A project used across several AI tools has a configuration file per tool. Each falls out of date at a different rate, and the project's ground truth ends up split across files nobody updates together.
 
-**Protocol:** One file, `SYSTEM.md`, holds the authoritative project context. Tool-specific files (`CLAUDE.md`, `GEMINI.md`, `.cursorrules`) are short pointers to it. Context changes happen in one place. See [SYSTEM.md Primacy](system-primacy.md).
+**Protocol:** One file, `AGENTS.md`, holds the authoritative project context. Tool-specific files (`CLAUDE.md`, `GEMINI.md`, `.cursorrules`) are short pointers to it, so context changes happen in one place. See [AGENTS.md Primacy](agents-md-primacy.md).
 
 The idea is older than AI. Configuration management, editorial style guides, and military Commander's Intent all rely on one authoritative statement that everything downstream references.
 
@@ -70,7 +70,7 @@ The idea is older than AI. Configuration management, editorial style guides, and
 
 **Failure:** Without a routine, you re-explain the project in every chat. The explanation is always incomplete, and the project drifts toward your retelling instead of its actual state.
 
-**Protocol:** Every substantive session starts the same way. Read `SYSTEM.md`, read the topology map, find files changed since the last session, and load the context the task needs. See [The Session Protocol](session-protocol.md).
+**Protocol:** Every substantive session starts the same way. Read `AGENTS.md`, find files changed since the last logged session, and load the context the task needs. See [The Session Protocol](session-protocol.md).
 
 ### 3.3. Decision Records (ADRs and PDRs)
 
@@ -124,8 +124,9 @@ The other protocols depend on links: reweave uses them to find affected document
 
 **Protocol:** AI-generated content lands in `drafts/` first. It moves into the vault only after passing a tightening checklist. See [The Ingestion Gate](ingestion-gate.md).
 
-The checklist is described in [AI Writing Discipline](writing-discipline.md). It draws on three sources:
+The checklist is described in [AI Writing Discipline](writing-discipline.md). It draws on four sources:
 
+- **ISO 24495-1:2023, the international plain language standard.** Readers should get what they need, find it, understand it, and use it.
 - **Strunk & White, *The Elements of Style*.** Active voice, omit needless words, concrete nouns and strong verbs.
 - **Military correspondence doctrine.** Bottom Line Up Front (BLUF), Commander's Intent, and brevity, as in the U.S. Army's [AR 25-50](https://armypubs.army.mil/ProductMaps/PubForm/Details.aspx?PRODUCT_ID=1004725).
 - **Engineering documentation practice.** Documents get read in a hurry, so the critical information goes first.
@@ -164,8 +165,8 @@ You maintain the vault: write the decision records, run the protocols, tighten t
 
 Not every project needs every protocol. A short experiment doesn't need the reweave discipline, and a small project doesn't need an ADR for every choice. The setup tiers reflect this:
 
-- **Tier 1 (web chat).** Fill out `SYSTEM.md` and paste it at the start of each chat.
-- **Tier 2 (AI IDE).** Rules files direct the IDE's AI to read `SYSTEM.md` automatically.
+- **Tier 1 (web chat).** Fill out `AGENTS.md` and paste it at the start of each chat.
+- **Tier 2 (AI IDE).** The IDE's AI reads `AGENTS.md` automatically.
 - **Tier 3 (CLI agents).** The full vault and protocols, read at every session start.
 
 A project can start at Tier 1 and add protocols as it grows.
@@ -205,7 +206,8 @@ The method combines existing practices and adapts them for AI-assisted work.
 
 - **Architecture Decision Records.** Michael Nygard, [*Documenting Architecture Decisions*](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) (2011). PDRs extend this format.
 - **Zettelkasten.** Niklas Luhmann's note-taking method, introduced to a wide audience by Sönke Ahrens in [*How to Take Smart Notes*](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) (2017). The `concepts/` folder and wikilink discipline come from this tradition.
-- **Strunk & White.** [*The Elements of Style*](https://www.bartleby.com/141/), the basis for the writing rules.
+- **Plain language.** [ISO 24495-1:2023](https://www.iso.org/standard/78907.html), whose four principles frame the writing rules.
+- **Strunk & White.** [*The Elements of Style*](https://www.bartleby.com/141/), the source of the sentence-level rules.
 - **Military correspondence doctrine.** BLUF, Commander's Intent, and brevity.
 - **Ars Contexta.** [agenticnotetaking/arscontexta](https://github.com/agenticnotetaking/arscontexta), an AI vault generator. Wikilink discipline and the reweave protocol were adapted from it. The vault relies more on human tightening than on auto-generation.
 - **Obsidian.** [obsidian.md](https://obsidian.md), the main editor the vault is built around. Plain markdown with YAML frontmatter keeps the vault usable in any editor.
@@ -218,7 +220,7 @@ As far as we know, this particular combination is new: decision records tied to 
 
 Add each protocol when its failure shows up. Full setup is in the [Quickstart](../installation/quickstart.md).
 
-1. **Start with `SYSTEM.md`.** Write what the project is, who it's for, and the current phase. Load it at the start of every AI session and update it when something important changes.
+1. **Start with `AGENTS.md`.** Write what the project is, who it's for, and the current phase. Load it at the start of every AI session and update it when something important changes.
 2. **Add decision records when you catch yourself relitigating.** The second time you have the same argument with the AI, write an ADR.
 3. **Add the ingestion gate when AI prose creeps in.** If you've pasted AI reports into project docs, the checklist pays off right away.
 4. **Add traceability when a claim turns out to be wrong.** The first decision that rests on an invented citation makes the case.

@@ -12,14 +12,14 @@ tags: [documentation, vault-administration, design-philosophy]
 
 The vault is the project's memory for humans and AI. Without it, each AI session starts fresh, repeats old questions, loses track of rejected alternatives, and drifts from standing decisions.
 
-`SYSTEM.md` is the entry point. It tells a fresh session what the project is, what's been decided, what's off-limits, and where everything lives.
+`AGENTS.md` is the entry point. It tells a fresh session what the project is, what's been decided, what's off-limits, and where everything lives.
 
 ## Design Principles
 
 1. **Decisions are first-class objects.** Each important decision has its own doc (ADR or PDR).
 2. **Research is traceable, not decorative.** Empirical claims in ADRs link back to specific vault research docs.
 3. **Forward propagation + backward reweave.** New decisions push forward into plans; new research forces backward checks of existing decisions.
-4. **SYSTEM.md is a routing document, not an encyclopedia.**
+4. **AGENTS.md is a routing document, not an encyclopedia.**
 5. **Wikilinks are structural.** Links let humans and AI agents navigate by following connections.
 6. **Ideas have a home.** The `ideas/` directory captures raw product and technical ideas before they become decisions.
 

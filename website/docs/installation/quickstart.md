@@ -10,9 +10,9 @@ From the repository root, run:
 
 The script copies the template and makes an initial git commit. Without a terminal, copy the `template/` folder and rename it.
 
-## 2. Fill In SYSTEM.md
+## 2. Fill In AGENTS.md
 
-Open `SYSTEM.md` and replace the bracketed placeholders, such as `[Project Name]`, with your project's details. The [Setup Wizard](wizard.md) can do this for you.
+Open `AGENTS.md` and replace the bracketed placeholders, such as `[Project Name]`, with your project's details. The [Setup Wizard](wizard.md) can do this for you.
 
 ## 3. Set Hard Constraints
 
@@ -20,4 +20,4 @@ Open `architecture/CONSTITUTION.md` and list the rules your project must never b
 
 ## 4. Start a Session
 
-Open the project folder in your AI tool, where `CLAUDE.md`, `GEMINI.md`, and `.cursorrules` tell the AI to read `SYSTEM.md` at the start of each session. In a web chat, paste `SYSTEM.md` as your first message.
+Open the project folder in your AI tool. Codex, Cursor, and Windsurf read `AGENTS.md` directly, and `CLAUDE.md` and `GEMINI.md` import it. In a web chat, paste `AGENTS.md` as your first message.

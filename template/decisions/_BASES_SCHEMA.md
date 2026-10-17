@@ -11,7 +11,7 @@ Copy this frontmatter into every new decision record:
 doctype: ADR  # or PDR
 id: ADR-T00X  # or PDR-P00X
 domain: technical  # or product
-status: accepted  # or rejected, deprecated, proposed
+status: accepted  # or proposed, rejected, superseded, deprecated
 date: YYYY-MM-DD
 tags: [kebab-case, list, of, topics]
 constitution-clause: null  # or S1, P3, etc. if relevant

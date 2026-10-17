@@ -4,7 +4,7 @@ date: YYYY-MM-DD
 status: Active
 tags: [architecture, invariants]
 ---
-# [[CONSTITUTION]].md — Project Invariants
+# CONSTITUTION.md — Project Invariants
 
 *This document defines what the project is and is not allowed to do. These constraints are non-negotiable. Violating any invariant requires creating a new ADR that explicitly supersedes the relevant clause. "It would be easier" is not sufficient justification.*
 

@@ -7,4 +7,4 @@
 3. Paste it into your AI tool (Claude Code, Cursor, Gemini, or ChatGPT) from the vault directory.
 4. Answer its four questions about your project.
 
-With file access, the AI fills in `SYSTEM.md`, `AGENTS.md`, and `architecture/CONSTITUTION.md` directly. Without it, the AI prints the finished files for you to paste.
+With file access, the AI fills in `AGENTS.md` and `architecture/CONSTITUTION.md` directly. Without it, the AI prints the finished files for you to paste.

@@ -2,6 +2,15 @@
 
 Vault documents are written for a reader with no context: the next AI session. Short, direct prose lets that session load more of the project and find the main point fast.
 
+## Plain Language (ISO 24495-1)
+
+The rules build on ISO 24495-1:2023, the international plain language standard. A document meets it when its readers can:
+
+- **Get what they need** (relevant).
+- **Find it easily** (findable).
+- **Understand it** (understandable).
+- **Use it** to act or decide (usable).
+
 ## The Rules
 
 - **Main point first (BLUF).** The first sentence of a document or section states the decision or finding. No introductions.
@@ -11,6 +20,8 @@ Vault documents are written for a reader with no context: the next AI session. S
 - **No preamble before a table or list** that explains itself.
 - **Complete sentences.** Short sentences are good. Fragments are not.
 - **Plain words.** "Uses," not "utilizes." "Different," not "inverted."
+- **Define terms on first use.** Spell out abbreviations and explain terms of art the first time they appear.
+- **Descriptive headings.** A heading says what the section contains ("Pricing Is Per Visit"), not a label ("Discussion").
 - **No reification.** If two things differ, describe the difference in a sentence. Don't capitalize it, give it a header, or call it a principle.
 - **No stacked synonyms.** Pick the most precise adjective and use it once.
 - **One em-dash per paragraph, at most.**
@@ -18,7 +29,7 @@ Vault documents are written for a reader with no context: the next AI session. S
 
 ## The Tightening Checklist
 
-Every document an AI writes or substantially edits must pass this checklist before the task is done. The full version lives in the template's `SYSTEM.md`.
+Every document an AI writes or substantially edits must pass this checklist before the task is done. The full version lives in the template's `AGENTS.md`.
 
 1. The first sentence states the core claim.
 2. No paragraph exceeds two sentences.

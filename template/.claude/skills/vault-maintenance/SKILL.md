@@ -27,7 +27,7 @@ Find all wikilinks that point to non-existent files.
 
 ### 2. Orphaned Notes
 Find files that have *no incoming links*.
-*Action:* Find a logical parent document (e.g., `SYSTEM.md` or a `README.md`) and weave a `[[wikilink]]` to the orphaned note.
+*Action:* Find a logical parent document (e.g., `AGENTS.md` or a `README.md`) and weave a `[[wikilink]]` to the orphaned note.
 
 ### 3. Dead End Notes
 Find files that have *no outgoing links*.

@@ -4,7 +4,7 @@ The vault is a folder of markdown files, so any editor that reads and saves `.md
 
 ## Windows
 
-1. **Notepad++.** A fast, lightweight editor. It has no graph view or wikilink support, but it's fine for editing `SYSTEM.md` and plain notes.
+1. **Notepad++.** A fast, lightweight editor. It has no graph view or wikilink support, but it's fine for editing `AGENTS.md` and plain notes.
 2. **VS Code.** With the *Markdown All in One* and *Foam* extensions, it supports wikilinks and a graph view.
 3. **Zettlr.** An open-source markdown editor for researchers and writers, with cross-linking.
 
@@ -19,5 +19,5 @@ The vault is a folder of markdown files, so any editor that reads and saves `.md
 Cloud tools make it harder for local CLI agents like `claude` or `gemini` to read your files.
 
 1. **GitHub or GitLab.** Put the vault in a private repository and edit files in the browser, which renders markdown.
-2. **Notion.** You can keep `SYSTEM.md` content in Notion, but exporting back to markdown for an agent is awkward.
+2. **Notion.** You can keep `AGENTS.md` content in Notion, but exporting back to markdown for an agent is awkward.
 3. **Google Docs.** It has no markdown or folder nesting, so it doesn't suit the vault itself. Use it for early drafts only.

@@ -1,10 +1,11 @@
-# Gemini CLI Instructions
+# GEMINI.md
 
-**⚠️ MANDATORY:** You are operating in an Agentic Vault. Before answering the user or taking any action in a new session, you MUST read the master context file:
-`SYSTEM.md`
+Read [[AGENTS]].md before doing anything. It is the single source of truth for this vault.
 
-*(Please use `read_file('SYSTEM.md')` now.)*
+@AGENTS.md
 
-Once you have read `SYSTEM.md`, adhere to its instructions entirely. `SYSTEM.md` is the Single Source of Truth (SSOT) for this project.
+## Gemini-Specific Notes
 
-*Tooling Note:* You do not have MCP. Use native `read_file`, `grep_search`, `glob`, and `run_shell_command` (with the `obsidian` CLI if available) for vault-aware queries.
+- Gemini CLI loads `AGENTS.md` through the `@AGENTS.md` import above. If it doesn't, run `read_file('AGENTS.md')`.
+- Use `read_file`, `grep_search`, `glob`, and `run_shell_command` (with the `obsidian` CLI if installed) for vault queries.
+- Link the vault skills with the `sync-skills` skill so Gemini can run `vault-start`.
