@@ -24,4 +24,4 @@ The recommended setup is Obsidian plus a desktop AI app with MCP, backed up to G
 
 ## 5. Start a Session
 
-Open the project folder in your AI tool. Codex, Cursor, and Windsurf read `AGENTS.md` directly, and `CLAUDE.md` and `GEMINI.md` import it. In a web chat, paste `AGENTS.md` as your first message.
+Open the project folder in your AI tool: Codex, Cursor, and Windsurf read `AGENTS.md` directly, and `CLAUDE.md` and `GEMINI.md` import it. In a web chat, paste `AGENTS.md` as your first message.

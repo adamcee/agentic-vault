@@ -6,20 +6,19 @@ AI models forget everything between chats. On a project that lasts weeks or mont
 
 The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first instead of starting from zero.
 
-Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. Because it's plain markdown, you own it. It works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
+Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
 
 ## How It Works
 
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
 2. **One master file.** `AGENTS.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every AI session reads it first.
 3. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why.
-4. **The agent maintains the vault.** Built-in rules tell the agent to log each session, update the plan after each decision, check old decisions against new evidence, and fix broken links. That busywork moves off your plate, so you can spend your time on decisions and use the agent freely, without having to manage it.
+4. **The agent maintains the vault.** Built-in rules tell the agent to log each session, update the plan after each decision, check old decisions against new evidence, and fix broken links. That busywork moves off your plate, so you can focus on the decisions and work with the agent however suits you.
 5. **Writing discipline.** Vault documents put the main point first and cut AI filler. That makes them faster for you to read and act on, and lets the AI load more of the project at once.
 
 ## What It Lets You Do
 
 - **Build a knowledge base you own.** The vault grows into a linked map of your project in plain files that no vendor controls.
-
 - **Stop and restart sessions freely.** Each session records where it left off. The next one picks up from there, even after weeks away.
 - **Use several AI tools on one project.** Claude Code, Codex, Gemini CLI, Cursor, and chat apps all read the same master file, `AGENTS.md`.
 - **Keep settled questions settled.** Decisions and rejected alternatives are written down, so the AI stops reopening them.
@@ -36,11 +35,13 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 └── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
-The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
+You can [explore the Night Post example](https://adamcee.github.io/agentic-vault/night-post/), an indie game vault, as an interactive site. The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
 
 ## Setup
 
-**Recommended setup:** open the vault in [Obsidian](https://obsidian.md/) and connect a desktop AI app that supports MCP (Model Context Protocol), such as Claude Desktop or the Codex app. You chat with the AI however you like, and every chat can read and write the vault, while you view and edit the same files in Obsidian. Back the vault up to a private GitHub repository for history and off-site copies. [Obsidian Setup](website/docs/installation/obsidian-setup.md) walks through it and lists the plugins that help the AI.
+**Recommended setup:** [Obsidian](https://obsidian.md/) plus a desktop AI app that supports MCP (Model Context Protocol), such as Claude Desktop or the Codex app, backed up to a private GitHub repository. You chat with the AI however you like and every chat can read and write the vault, while you view and edit the same files in Obsidian.
+
+[Obsidian Setup](website/docs/installation/obsidian-setup.md) walks through it and lists the plugins that help the AI.
 
 The tiers below cover other ways to work. You can move up a tier later.
 

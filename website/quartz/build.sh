@@ -4,14 +4,21 @@
 #   build.sh --serve        preview at http://localhost:8080
 set -euo pipefail
 
-QUARTZ_VERSION=v4.5.2
+# Quartz v4.5.2, pinned by commit so a moved tag can't change what runs.
+QUARTZ_COMMIT=4923affa7722dfc751f1074348e6dad214fe0c08
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO="$(cd "$HERE/../.." && pwd)"
 WORK="$HERE/.quartz"
 VAULT="$REPO/examples/creative"
 
 if [ ! -d "$WORK" ]; then
-  git clone --quiet --depth 1 --branch "$QUARTZ_VERSION" https://github.com/jackyzha0/quartz.git "$WORK"
+  git init --quiet "$WORK"
+  git -C "$WORK" fetch --quiet --depth 1 https://github.com/jackyzha0/quartz.git "$QUARTZ_COMMIT"
+  git -C "$WORK" checkout --quiet FETCH_HEAD
+fi
+if [ "$(git -C "$WORK" rev-parse HEAD)" != "$QUARTZ_COMMIT" ]; then
+  echo "Quartz checkout is not at $QUARTZ_COMMIT; delete $WORK and rerun." >&2
+  exit 1
 fi
 cp "$HERE/quartz.config.ts" "$HERE/quartz.layout.ts" "$WORK/"
 [ -d "$WORK/node_modules" ] || (cd "$WORK" && npm ci --silent)

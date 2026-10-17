@@ -55,4 +55,4 @@ You get an off-site backup, a full history of every change you or the AI made, a
 
 ## Without Obsidian
 
-Obsidian is recommended, not required. Any editor that saves markdown works, and CLI agents need only the files. See [Tooling Alternatives](tooling-alternatives.md).
+Obsidian is recommended, not required. Any editor that saves markdown works, and CLI agents need only the files ([Tooling Alternatives](tooling-alternatives.md)).

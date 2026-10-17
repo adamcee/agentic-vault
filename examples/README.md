@@ -10,4 +10,4 @@ Night Post is the largest, about six months in, and you can [explore it as an in
 | [Business](business/README.md) | **Curbside Cycles**, a mobile bike-repair van | A pilot month replaces per-visit pricing with a membership. |
 | [Creative](creative/README.md) | **Night Post**, an adventure RPG about a courier delivering letters through a forest at night | Six months of playtests, market data, accessibility audits, and audio tests reshape combat, scope, and how letters look. |
 
-All three start from the same [template](https://github.com/adamcee/agentic-vault/tree/main/template). Research in the examples is the fictional teams' own interviews, pilots, and playtests. Night Post also summarizes one real accessibility standard.
+All three start from the same [template](https://github.com/adamcee/agentic-vault/tree/main/template). Their research is the fictional teams' own interviews, pilots, and playtests, plus one summary of a real accessibility standard in Night Post.

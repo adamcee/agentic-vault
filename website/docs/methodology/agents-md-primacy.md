@@ -10,4 +10,4 @@ If you use several AI tools (Cursor for code, Claude Desktop for planning, Gemin
 
 ## Pointer Files
 
-For tools that look elsewhere, the template includes short pointer files. `CLAUDE.md` and `GEMINI.md` import `AGENTS.md` with an `@AGENTS.md` line, and `.cursorrules` and `.windsurfrules` tell the AI to read it. Pointer files hold only tool-specific notes, so a project rule changes in one place.
+For tools that look elsewhere, the template includes short pointer files: `CLAUDE.md` and `GEMINI.md` import `AGENTS.md` with an `@AGENTS.md` line, and `.cursorrules` and `.windsurfrules` tell the AI to read it. Pointer files hold only tool-specific notes, so a project rule changes in one place.
