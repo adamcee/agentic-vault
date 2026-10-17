@@ -4,28 +4,23 @@ Source for the Agentic Vault documentation site, built with [MkDocs Material](ht
 
 ## Run It Locally
 
-The first time, create a virtual environment and install the dependencies:
+Install [uv](https://docs.astral.sh/uv/), then run:
 
 ```bash
 cd website
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv run mkdocs serve
 ```
 
-After that, activate the environment and start the server:
+The first run sets up Python 3.13 and the pinned dependencies into `website/.venv`. The site runs at `http://127.0.0.1:8000` and reloads when you save a file.
 
-```bash
-cd website
-source .venv/bin/activate
-mkdocs serve
-```
+Run `uv run mkdocs build` to check for broken links before pushing. It writes to `site/`, which git ignores.
 
-The site runs at `http://127.0.0.1:8000` and reloads when you save a file. Run `mkdocs build` to check for broken links before pushing; it writes to `site/`, which git ignores.
+To add or upgrade a dependency, run `uv add <package>` and commit the updated `pyproject.toml` and `uv.lock`.
 
 ## Layout
 
 - **`mkdocs.yml`**: site settings and navigation. Add new pages to `nav`.
+- **`pyproject.toml`** and **`uv.lock`**: Python dependencies, pinned.
 - **`docs/`**: the pages.
 - **`docs/examples`**: a symlink to the repo's `examples/` folder. Edit the example vaults there, not here.
 - **`hooks/wikilinks.py`**: turns Obsidian `[[wikilinks]]` in the example vaults into working links.
