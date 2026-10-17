@@ -23,7 +23,7 @@ Within one conversation, current models reason well and draft quickly. The next 
 - **Relitigation.** The AI has no record of earlier rounds, so it proposes the same ideas every few weeks. You re-explain why you rejected MongoDB, or why you chose one framework over another.
 - **Decision drift.** Asked to solve a problem, the AI reaches for the most common pattern in its training data. That pattern may contradict a choice you made deliberately two months ago, and nobody notices until later.
 - **Evidence gaps.** The AI can produce a confident rationale for almost any position and will cite research that does not exist. Without a way to trace claims to sources, the project builds on unverified assertions.
-- **Prose degradation.** AI output carries hedges, meta-commentary, and padded paragraphs. Once that prose enters project documents, future sessions read it and produce more of it.
+- **Prose degradation.** AI output carries hedges, meta-commentary, and padded paragraphs. Bloated documents are slow for you to read and hard to act on, and future sessions copy their style.
 - **Context rot.** As a session or document grows, the model attends less to what came first. The session starts producing work that contradicts its own instructions.
 
 ### 1.2. Partial Fixes
@@ -120,7 +120,7 @@ The other protocols depend on links: reweave uses them to find affected document
 
 ### 3.9. The Ingestion Gate
 
-**Failure:** AI-generated reports get pasted straight into the vault. Their prose patterns spread, and future sessions read them as the project's voice.
+**Failure:** AI-generated reports get pasted straight into the vault. You stop reading documents that bury the point, and future sessions copy their style.
 
 **Protocol:** AI-generated content lands in `drafts/` first. It moves into the vault only after passing a tightening checklist. See [The Ingestion Gate](ingestion-gate.md).
 
@@ -143,7 +143,7 @@ The checklist is described in [AI Writing Discipline](writing-discipline.md). It
 
 In most AI workflows, the conversation is where work happens and files are where it ends up. The vault reverses this: work accumulates in the files, and the chat moves it between you and the files.
 
-In practice, you write each document for a reader with no context, because the next session's AI has none. Source code and lab notebooks work the same way.
+In practice, each document has to work for you months later and for the next AI session, which has no context at all. Source code and lab notebooks work the same way.
 
 ### 4.2. Decisions Over Opinions
 

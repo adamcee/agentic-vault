@@ -46,6 +46,7 @@ nav:
   - Home: index.md
   - Installation:
     - Quickstart: installation/quickstart.md
+    - Obsidian Setup (Recommended): installation/obsidian-setup.md
     - Setup Wizard: installation/wizard.md
     - Tooling Alternatives: installation/tooling-alternatives.md
   - The Methodology:
@@ -65,4 +66,5 @@ nav:
     - Overview: examples/README.md
     - Software (Brigade): examples/software/README.md
     - Business (Curbside Cycles): examples/business/README.md
-    - Creative (Low Tide): examples/creative/README.md
+    - Creative (Night Post): examples/creative/README.md
+    - Explore Night Post (interactive): https://adamcee.github.io/agentic-vault/night-post/

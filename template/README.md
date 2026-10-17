@@ -4,12 +4,16 @@
 
 AI tools forget everything between sessions, so they reopen settled decisions, suggest options you already rejected, and lose track of what you're building. This vault holds your decisions, research, and plans in plain files that every AI session reads first.
 
+Over time it becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base) (or [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science))): plain markdown you own, read, and edit, tracked with git and searchable by any AI tool.
+
 ## How It Works
 
-1. **`AGENTS.md` is the single source of truth.** Every AI tool reads it before acting.
-2. **Decision records (ADRs and PDRs)** record what you chose, what you rejected, and why.
-3. **Research traceability.** Empirical claims link to research docs in the vault, not to the AI's memory.
-4. **Writing discipline.** Documents put the main point first and keep paragraphs to two sentences, so an AI can read more of the vault in less context.
+1. **Plain markdown files.** You can read and edit everything yourself, in Obsidian or any editor.
+2. **`AGENTS.md` is the single source of truth.** Every AI tool reads it before acting.
+3. **Decision records (ADRs and PDRs)** record what you chose, what you rejected, and why.
+4. **Research traceability.** Empirical claims link to research docs in the vault, not to the AI's memory.
+5. **The agent maintains the vault.** Protocols in `AGENTS.md` tell the agent to log sessions, propagate decisions, recheck decisions against new evidence, and fix links, so you don't have to.
+6. **Writing discipline.** Documents put the main point first and cut AI filler, so they're quick for you to read and use, and the AI can load more of the vault at once.
 
 ## Setup
 

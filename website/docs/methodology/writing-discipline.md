@@ -1,6 +1,6 @@
 # AI Writing Discipline
 
-Vault documents are written for a reader with no context: the next AI session. Short, direct prose lets that session load more of the project and find the main point fast.
+Vault documents are written for you first and the next AI session second. Cutting AI filler makes a document faster for you to read, check, and act on, and it lets the AI load more of the project at once.
 
 ## Plain Language (ISO 24495-1)
 

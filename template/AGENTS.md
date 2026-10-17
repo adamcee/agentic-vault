@@ -50,7 +50,7 @@ Share useful advice, risks, and alternatives even when not asked, kept short and
 
 ## Writing Discipline
 
-Write for a reader with no context, following the four principles of ISO 24495-1 plain language: readers get what they need, find it easily, understand it, and can act on it. The full rules are in [[vault-guide/style-guides/ai-writing-discipline-core]].
+Write for the human owner first and the next AI session second, following the four principles of ISO 24495-1 plain language: readers get what they need, find it easily, understand it, and can act on it. The full rules are in [[vault-guide/style-guides/ai-writing-discipline-core]].
 
 **Tightening Checklist.** Every document an AI agent writes or substantially edits must pass this checklist before the task is complete.
 1. The first sentence states the core claim (BLUF).

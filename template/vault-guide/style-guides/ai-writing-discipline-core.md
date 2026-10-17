@@ -7,7 +7,7 @@ tags: [style-guide, writing-discipline, core]
 # AI Writing Discipline: Core Architecture
 
 ## BLUF
-Vault documents are written for a reader with no context, usually the next AI session. They follow ISO 24495-1 plain language and the rules below.
+Vault documents are written for the human owner first and the next AI session second. They follow ISO 24495-1 plain language and the rules below.
 
 ## Plain Language (ISO 24495-1:2023)
 A document is in plain language when its readers can:
