@@ -21,7 +21,7 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 /
 ├── template/   ← The vault template. Copy this to start a project.
 ├── examples/   ← Three filled-in example vaults: software, business, and creative.
-└── website/    ← Source for the documentation site.
+└── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
 The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
