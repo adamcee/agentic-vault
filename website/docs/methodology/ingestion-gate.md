@@ -17,6 +17,10 @@ All AI-generated content (research reports, competitive analyses, syntheses, fro
 3. **Meta-commentary removal.** Delete *"This section will cover,"* *"As previously discussed,"* *"It is worth noting,"* and *"The following table shows."*
 4. **Paragraph compression.** No paragraph in a strategy or architecture doc exceeds two sentences.
 
+## Promote With a Link-Aware Move
+
+Move an approved draft with a tool that rewrites links, such as Obsidian's move command or an MCP move. A plain `mv`, or copying the file and deleting the draft, leaves every link pointing at `drafts/`. If that happens, fix the links and run the link checker.
+
 ## Fix Errors, Don't Annotate Them
 
 When tightening a draft, remove what's wrong instead of flagging it and keeping it.

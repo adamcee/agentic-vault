@@ -21,8 +21,12 @@ mkdir -p "$TARGET_DIR"
 # Copy template contents (excluding .git if it exists, and the scripts folder)
 rsync -av --exclude='.git' --exclude='scripts/' "$TEMPLATE_DIR/" "$TARGET_DIR/"
 
-# Initialize git
+# Date the first session-history entry
 cd "$TARGET_DIR"
+TODAY="$(date +%Y-%m-%d)"
+sed -i.bak "s/\[YYYY-MM-DD\]/$TODAY/" session-history.md && rm session-history.md.bak
+
+# Initialize git
 git init
 git add .
 git commit -m "chore: initialize Agentic Vault"

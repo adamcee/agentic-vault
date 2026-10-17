@@ -15,4 +15,9 @@ Brigade is a fictional shift-scheduling web app for small independent restaurant
 9. **Idea, open:** [auto-approve same-role swaps](ideas/auto-approve-same-role-swaps.md) waits on pilot follow-up.
 10. **Draft awaiting tightening:** [SMS provider comparison](drafts/ai-report-sms-provider-comparison.md) is raw AI prose held at the ingestion gate.
 11. **Admitted doc and its original:** [competitor feature scan](research/competitor-feature-scan.md) passed the gate, and [its untouched original](research/_source-competitor-feature-scan.md) sits beside it.
-12. **Session history:** [session-history.md](session-history.md) logs eight sessions, one line each.
+12. **Session logs:** [session-history.md](session-history.md) logs eight sessions, one line each in the form `(agent, session type) what changed`, across Claude Code, Claude Desktop, and Codex.
+13. **Weekly logs:** [prototype/implementation-logs/](prototype/implementation-logs/README.md) holds one file per week from the first session, such as [2026-W41](prototype/implementation-logs/2026-W41.md), with a section for each session in the history.
+14. **Ledger vs. human task list:** the [implementation plan](prototype/implementation-plan.md) is the AI's ledger, sorted into Now, owner calls, decisions owed, and drafts awaiting promotion. The [human task list](prototype/human-task-list.md) is the owner's own short list, with a few items pulled from the ledger.
+15. **Hand-over note:** the 2026-10-09 session stopped before the gate pass and left [a resume note](drafts/2026-10-09-resume-sms-provider-choice.md) saying what's done, what's next, and what the owner must answer.
+16. **`[unsourced]` claim backfilled:** [PDR-P002](decisions/product/PDR-P002-manager-approval-for-swaps.md) said swaps stall when the manager is off shift with no source; the pilot data now backs that claim, as logged in [2026-W41](prototype/implementation-logs/2026-W41.md).
+17. **Reusable prompts:** [prompts/](prompts/README.md) holds the [research brief](prompts/sms-provider-research-brief.md) behind the SMS draft and the [log synthesis prompt](prompts/pilot-log-synthesis.md) behind the pilot data doc.

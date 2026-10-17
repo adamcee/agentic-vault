@@ -6,7 +6,7 @@ tags: [architecture, invariants]
 ---
 # CONSTITUTION.md — Business Invariants
 
-*This document defines what Curbside Cycles is and is not allowed to do. These constraints are non-negotiable. Violating any invariant requires a new decision record that explicitly supersedes the relevant clause. "It would be easier" is not sufficient justification.*
+*What Curbside Cycles must never do. Breaking an invariant requires a new decision record that supersedes the clause; "it would be easier" is not a reason.*
 
 ## Part I — Service & Pricing Invariants
 
@@ -21,11 +21,11 @@ tags: [architecture, invariants]
 
 ## Part III — Violation Protocol
 
-If there is a genuine reason to violate any invariant in this document:
-1. Stop. Do not act on the violation.
-2. Create an ADR in `/decisions/technical/` or a PDR in `/decisions/product/` that:
-   - Names the specific CONSTITUTION clause being superseded
-   - States the reason in full
-   - Documents the alternatives considered
-   - States the consequences
-3. Get the record reviewed by the founder before acting.
+Breaking an invariant for a real reason takes three steps:
+1. Stop, and don't act on the break.
+2. Draft an ADR for `decisions/technical/` or a PDR for `decisions/product/` that:
+   - Names the CONSTITUTION clause it supersedes.
+   - States the reason in full.
+   - Lists the alternatives considered.
+   - States the consequences.
+3. Review the draft in chat and act only after the founder approves the record ([[vault-guide/decision-propagation-protocol]]).

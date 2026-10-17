@@ -25,6 +25,6 @@ Every [[concepts/shift-swap]] needs a manager's approval before it changes the s
 - **No tracking, as with group texts.** Staff keep full freedom, but the schedule stops matching who shows up.
 
 ## Consequences
-- Each swap waits for a manager, which slows swaps when the manager is off shift.
+- Each swap waits for a manager, which slows swaps when the manager is off shift. Three same-role swaps at Restaurant B waited more than three hours for this reason ([[research/pilot-usage-weeks-1-2]] [emerging]).
 - Every swap decision lands in the audit log required by clause S2 of [[architecture/CONSTITUTION]].
 - The overtime check depends on the manager's judgment, not on Brigade.

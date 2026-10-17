@@ -32,7 +32,7 @@ Seven of nine listeners found continuous music tiring after about 20 minutes, an
 - **Arrivals want music.** 9/9 liked the music returning at arrivals in version B.
 - **Silence was not empty.** Six listeners said the frog and reed ambience made the quiet stretches feel like walking at night.
 
-### Listener Quotes
+## Listener Quotes
 - **L2:** "By the third delivery the loop was in my teeth."
 - **L5:** "When the music came back at the office, I actually smiled."
 - **L7:** "I didn't mind the music, but the arrivals in B felt like a reward."

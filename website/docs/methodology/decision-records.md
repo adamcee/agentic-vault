@@ -8,6 +8,14 @@ A fresh AI session has no record of past decisions, so it reopens them. If you r
 
 An ADR stating "MongoDB was rejected because of X" stops this. The AI reads the record and works within it.
 
+## Review Before Writing
+
+A decision record is drafted in chat first: the AI lists three alternatives with one-line tradeoffs, drafts the record, and revises it with you, usually over two to four rounds. It writes the file only after you approve.
+
+## Status
+
+An accepted record that gets amended with a dated note stays `accepted`. A record is `superseded` only when a newer one replaces it entirely, and rejected options move to `decisions/rejected/`.
+
 ## Keeping Records Current
 
 Two protocols keep decisions accurate over time:

@@ -26,7 +26,7 @@ Players read letters under 120 words in full 88% of the time, and skimmed or ski
 - **Long letters get skimmed.** Players skimmed or skipped letters over 200 words 64% of the time.
 - **Reading drops before 200 words.** The middle band fell to 54% read in full, so the drop starts above 120 words.
 
-### Player Quotes
+## Player Quotes
 - **P2:** "If it fits on the screen, I read it."
 - **P6:** "The long ones felt like homework, so I read the first line and the signature."
 - **P9:** "I read the long one from Odile because I wanted to know what she owed."

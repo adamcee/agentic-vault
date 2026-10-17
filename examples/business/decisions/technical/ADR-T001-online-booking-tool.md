@@ -24,6 +24,6 @@ Curbside Cycles takes bookings through a hosted online booking tool at $30 a mon
 ## Consequences
 - The monthly fee is a fixed cost from day one.
 - Customer records live in one place ([[architecture/CONSTITUTION]] S1).
-- Commuters were assumed to prefer booking online over calling [unsourced].
+- Commuters prefer booking online to calling: 44 of 52 pilot visits came through the tool ([[research/pilot-month-results]] [emerging]).
 
-> **Reweave 2026-10-05 (strengthened):** 44 of 52 pilot visits were booked through the tool rather than by phone or text ([[research/pilot-month-results]] [emerging]).
+> **Reweave 2026-10-05 (strengthened):** 44 of 52 pilot visits were booked through the tool rather than by phone or text ([[research/pilot-month-results]] [emerging]). The online-booking claim under Consequences was flagged `[unsourced]` until this pilot and now cites it.

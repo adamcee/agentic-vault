@@ -42,17 +42,20 @@ Paste the prompt in `SETUP_WIZARD.md` into your AI tool from this directory and 
 
 ```text
 /
-├── AGENTS.md                  ← Start here. Master context.
+├── AGENTS.md                  ← Start here. Master context and protocol checklists.
 ├── CLAUDE.md / GEMINI.md      ← Pointers to AGENTS.md for each tool.
 ├── session-history.md         ← One line per session, append-only.
 ├── architecture/
 │   └── CONSTITUTION.md        ← Hard constraints.
-├── decisions/                 ← Architecture and product decision records.
-├── strategy/                  ← Goals, users, business model.
+├── decisions/                 ← Decision records: technical/, product/, rejected/.
+├── strategy/                  ← Goals, audience, positioning.
 ├── concepts/                  ← Definitions (what something is).
 ├── ideas/                     ← Raw proposals (what something could be).
-├── research/                  ← Evidence and external findings.
-├── prototype/ (or src/)       ← Implementation plan and code.
+├── research/                  ← Evidence and source summaries.
+├── prototype/                 ← AI ledger, human task list, weekly logs, specs.
 ├── drafts/                    ← Staging area for AI-generated text.
-└── vault-guide/               ← Rules for maintaining the vault.
+├── prompts/                   ← Reusable prompts and research briefs.
+├── vault-guide/               ← Protocol pages and style guides.
+├── journal/                   ← Your notes. AI never writes here.
+└── .claude/skills/            ← Session start, link checks, lint, and review scripts.
 ```

@@ -27,7 +27,7 @@ Five of twelve players turned on the font toggle, and only two of twelve got los
 - **The font toggle got used.** 5/12 turned it on, four of them on handhelds. No player leaned in to read letter body text.
 - **Sessions ran 38 minutes.** The median session lasted 38 minutes, and nine of twelve players finished the demo.
 
-### Player Quotes
+## Player Quotes
 - **P4:** "The big stone heron is how I found my way back."
 - **P7:** "I switched the font straight away. The fancy writing at the bottom is still nice."
 - **P11:** "I got turned around at the marsh, but the heron is there, so I knew it was me, not the map."

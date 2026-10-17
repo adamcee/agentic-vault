@@ -76,7 +76,7 @@ The idea is older than AI. Configuration management, editorial style guides, and
 
 **Failure:** Decisions made in chat disappear. Three weeks later the rationale is gone, and the AI proposes the rejected alternative because nothing says it was rejected.
 
-**Protocol:** Major decisions go in `decisions/`. Architecture Decision Records (ADRs) cover technical choices; Product Decision Records (PDRs) cover product choices. Each records context, the decision, alternatives considered, and consequences. Rejected options are recorded too, often in a `rejected/` folder, so they can't be revived by accident.
+**Protocol:** Major decisions go in `decisions/`. Architecture Decision Records (ADRs) cover technical choices; Product Decision Records (PDRs) cover product choices. Each records context, the decision, alternatives considered, and consequences, and is drafted in chat and approved by the owner before it's written. Rejected options are recorded too, in a `rejected/` folder, so they can't be revived by accident.
 
 The format comes from Michael Nygard's ["Documenting Architecture Decisions" (2011)](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions), later spread by [Martin Fowler](https://martinfowler.com/articles/2021-document-architecture.html) and [adr.github.io](https://adr.github.io/). The vault adds PDRs, records rejections explicitly, and ties records to the other protocols, as described in [Decision Records](decision-records.md).
 
@@ -136,6 +136,18 @@ The checklist is described in [AI Writing Discipline](writing-discipline.md). It
 **Failure:** Ideas arrive faster than they can be evaluated. The ones not ready for a decision record die in chat logs and resurface weeks later.
 
 **Protocol:** An `ideas/` folder holds short notes for unevaluated ideas. Each has a `resolved-by` field recording whether it was promoted to a decision, rejected, absorbed into another document, or left open. See [The Ideas Lifecycle](ideas-lifecycle.md).
+
+### 3.11. Session Logs
+
+**Failure:** Sessions run in parallel or weeks apart, and nobody can tell what changed or who changed it. A session that rewrites a shared log can erase another session's entries.
+
+**Protocol:** Each session appends one line to `session-history.md` and a section to the week's implementation log, and never rewrites either. A lint script checks the logs at session close. See [Session Logs](session-logs.md).
+
+### 3.12. Vault Maintenance
+
+**Failure:** The plan grows past what anyone reads, links break, and old docs pile up.
+
+**Protocol:** The agent triages the plan when it passes about 200 open items and reviews the whole vault quarterly, fixing mechanical problems itself and sending decisions to you. Scripts check links and writing. See [Vault Maintenance](vault-maintenance.md).
 
 ## 4. Principles
 

@@ -29,7 +29,7 @@ Turn-based encounters averaged four minutes each, five of six players said they 
 - **Fights clashed with the tone.** 5/6 said the fights did not fit a game about delivering letters at night.
 - **Players dodged.** 4/6 walked around at least one creature to avoid a fight, and P3 avoided every fight after the first.
 
-### Player Quotes
+## Player Quotes
 - **P3:** "I'm a mail carrier. Why am I stabbing a hare?"
 - **P5:** "I'd rather walk around it and keep the letter dry."
 - **P6:** "The letters are cozy and creepy. The fights are just a menu."

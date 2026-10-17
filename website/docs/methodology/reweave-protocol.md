@@ -13,10 +13,12 @@ New research, competitive information, a strategy shift, or an outside event: an
 1. **Find affected docs.** Search the vault for ADRs, PDRs, strategy, and architecture docs the new information touches. Ask of each: *"If this doc were written today, would its conclusions change?"*
 2. **Classify the impact** on each affected doc:
     - **Strengthened.** Add a link to the new source in the doc's rationale.
-    - **Weakened.** Add a note and link, and flag it for human review.
+    - **Weakened.** Write a dated note into the affected doc and flag it for human review. Backlinks show that two docs connect, but not that one now undercuts the other.
     - **Invalidated.** Don't change it silently. Flag it for human review and propose a superseding ADR or PDR.
 3. **Record the triggers.** The new document gets a `## Reweave Triggers` section listing affected files, each with a one-line impact statement. If nothing is affected, say so.
-4. **Route action items** to the implementation plan, not the research doc.
+4. **Route action items** to the implementation plan, not the research doc, and log the reweave in the week's implementation log.
+
+**Backfill on touch:** any research doc you read in full or edit that lacks a `## Reweave Triggers` section gets one before the task closes.
 
 ## Relation to Decision Propagation
 

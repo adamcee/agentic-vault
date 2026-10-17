@@ -1,4 +1,4 @@
-*Status: awaiting tightening. See the ingestion gate in [[vault-guide/style-guides/ai-writing-discipline-core]] and the task in [[prototype/implementation-plan]].*
+*Status: awaiting tightening. See [[vault-guide/ingestion-gate]], the task in [[prototype/implementation-plan]], and the hand-over note [[drafts/2026-10-09-resume-membership-tiers]].*
 
 # Exploring Membership Tier Options for Curbside Cycles: A Deep Dive
 

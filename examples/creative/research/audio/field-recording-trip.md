@@ -27,7 +27,7 @@ Two nights at a wetland nature reserve produced 6 hours of audio and 41 usable t
 - **Frogs and reeds are the bed.** Frogs (17) and wind in reeds (12) give enough material for an ambient bed in every region.
 - **Owls are scarce.** Only 7 owl takes were usable, because most calls were faint or overlapped road noise.
 
-### Take Log Excerpt
+## Take Log Excerpt
 | Take | Night | Time | Subject | Length | Grade | Note |
 |---|---|---|---|---|---|---|
 | N1-04 | 1 | 21:12 | Frog chorus, near pond edge | 4:30 | Usable | Dense chorus; good for Gloamwick. |

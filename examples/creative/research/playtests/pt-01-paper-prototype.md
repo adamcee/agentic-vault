@@ -21,7 +21,7 @@ All five players named the choice to open a sealed letter as the moment they rem
 - **Combat felt like a different game.** 3/5 said the dice fights felt like a different game from the deliveries. Each paper fight took about six minutes of dice and bookkeeping.
 - **Ledger landed.** Four players laughed at the crow's comments, and P4 asked whether Ledger could carry letters too.
 
-### Player Quotes
+## Player Quotes
 - **P1:** "I read it, and then I had to hand it over like nothing happened. My face was hot."
 - **P3:** "The fight with the bog hound was fine, but I forgot I was a postman for ten minutes."
 - **P4:** "Can I tell the lamplighter what the letter said? I want to warn her."

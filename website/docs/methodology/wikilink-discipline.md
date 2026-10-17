@@ -21,9 +21,10 @@ A link costs seconds to add. A missing link costs a search every time someone ne
 
 A broken link points to a connection that doesn't exist, which is worse than no link.
 
-- After creating or editing links, confirm the targets exist. An AI session can read each target path, or a script can check them in bulk.
+- After creating or editing links, run the template's `vault-link-check.py` on the files you changed, or read each target path by hand.
 - Directory paths don't resolve as notes. Link to the directory's README instead.
-- Links to notes that don't exist yet are fine if flagged inline: *`[[future/note]] (does not exist yet — create when X happens)`*.
+- Links to notes that don't exist yet go in `.link-check-ignore`, so the checker skips them and a periodic triage can clear them out.
+- Once the checker reports zero broken links, keep it there; any new result is a regression.
 
 ## Why It Matters
 

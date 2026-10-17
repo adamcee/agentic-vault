@@ -25,6 +25,10 @@ The rules build on ISO 24495-1:2023, the international plain language standard. 
 - **No reification.** If two things differ, describe the difference in a sentence. Don't capitalize it, give it a header, or call it a principle.
 - **No stacked synonyms.** Pick the most precise adjective and use it once.
 - **One em-dash per paragraph, at most.**
+- **No hedging stacks or closing filler.** Cut "it might potentially" and summaries that repeat the section.
+- **Concrete before abstract.** Lead with the example; generalize only if it adds something. Of two sentences making the same claim, delete the weaker.
+- **Flat headings.** `#` for the title and `##` for sections; use `###` only when a section truly needs subsections. No HTML.
+- **Biographies stay short.** Two lines at most.
 - **ADRs and PDRs stay short.** They record context, decision, and consequences. Implementation specs and multi-line code go elsewhere.
 
 ## The Tightening Checklist
@@ -37,7 +41,7 @@ Every document an AI writes or substantially edits must pass this checklist befo
 4. No stacked near-synonymous adjectives.
 5. No meta-commentary in the body.
 6. ADRs and PDRs contain no implementation specs or multi-line code blocks.
-7. Executive summaries run 12 lines or fewer.
+7. Biographies run 2 lines or fewer; executive summaries 12 lines or fewer.
 8. No reified observations.
 9. No sentence fragments.
 10. No more than one em-dash per paragraph.

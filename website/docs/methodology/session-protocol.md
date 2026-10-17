@@ -1,6 +1,6 @@
 # The Session Protocol
 
-Every substantive session starts with the same four steps, so a new session begins from the project's current state. Every session that changes the vault ends by appending one line to `session-history.md`.
+Every substantive session starts with the same four steps, so a new session begins from the project's current state. Every session that changes the vault ends by appending to its [session logs](session-logs.md).
 
 ## The Steps
 

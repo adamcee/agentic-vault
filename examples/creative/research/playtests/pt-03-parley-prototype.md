@@ -21,7 +21,7 @@ Seven of eight players preferred parley to the earlier turn-based encounters. Th
 - **Opened letters fed parley.** 6/8 opened at least one sealed letter and used what they read to talk their way past a creature. Ines saw players reread letters before a parley.
 - **Parley was faster.** A parley took about 90 seconds on average, against about four minutes for a fight.
 
-### Player Quotes
+## Player Quotes
 - **P2:** "I read the hound's owner's letter, so I knew its name. I just called it home."
 - **P4:** "This feels like the same game as the letters now."
 - **P5:** "Shining the lantern at the moth thing felt rude. I offered it thread instead."

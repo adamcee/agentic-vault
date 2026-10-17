@@ -7,7 +7,7 @@ tags: [architecture, invariants]
 ---
 # CONSTITUTION.md — Night Post Invariants
 
-*This document defines what the project is and is not allowed to do. These constraints are non-negotiable. Violating any invariant requires creating a new ADR that explicitly supersedes the relevant clause. "It would be easier" is not sufficient justification.*
+*These invariants set what Night Post must never do. Breaking one requires a new decision record that supersedes the clause; "it would be easier" is not a reason.*
 
 ## Part I — Product & Domain Invariants
 
@@ -24,7 +24,7 @@ tags: [architecture, invariants]
 
 ## Part III — Violation Protocol
 
-If there is a genuine reason to violate any invariant in this document:
+If there is a genuine reason to break an invariant:
 1. Stop. Do not implement the violation.
 2. Create an ADR in `/decisions/technical/` or `/decisions/product/` that:
    - Names the specific CONSTITUTION clause being superseded

@@ -33,7 +33,7 @@ Six of ten players got lost after the first moon-shift, and four of ten squinted
 - **Handwritten letters were hard to read on handhelds.** 4/10 squinted at the handwritten letters, all four on handhelds. No desktop player squinted.
 - **Finishing took a median of 71 minutes.** Every player finished, and the six who got lost took longer than the four who did not.
 
-### Player Quotes
+## Player Quotes
 - **P3:** "The bridge was right here an hour ago. Where's the ferry road?"
 - **P6:** "I'm holding this up to my nose. Does it say 'owe' or 'own'?"
 - **P8:** "Can Ledger just tell me which way is north?"
