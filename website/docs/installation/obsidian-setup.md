@@ -2,6 +2,28 @@
 
 The recommended setup pairs [Obsidian](https://obsidian.md/) with a desktop AI app that supports the Model Context Protocol (MCP), such as Claude Desktop or the Codex app. You chat with the AI the way you like, and in every chat it can read and write the vault, while you browse and edit the same files in Obsidian.
 
+## New to Obsidian or MCP?
+
+Copy this prompt into your AI app, replacing the bracketed path, and it will set things up with you step by step.
+
+```text
+Help me set up Obsidian for my Agentic Vault, the folder at [path to my vault
+folder], following https://adamcee.github.io/agentic-vault/installation/obsidian-setup/.
+I'm new to Obsidian and MCP. Please:
+1. Ask what computer I use and which AI app I use (Claude Desktop, the Codex
+   app, or another app that supports MCP).
+2. Walk me through installing Obsidian and opening my folder as a vault.
+3. Walk me through installing the plugins listed on that page, starting with
+   Local REST API with MCP and Omnisearch. Explain each in one sentence.
+4. Help me connect my AI app to the vault's MCP server. Tell me exactly which
+   settings screen or config file to open and what to enter. If you can edit
+   the config file yourself, do it and show me what you changed.
+5. Help me back the vault up to a private GitHub repository with the Git
+   plugin, explaining each step in plain words.
+6. Test the setup: start a chat and confirm you can read AGENTS.md.
+Go one step at a time and wait for me to confirm before moving on.
+```
+
 ## How the Pieces Fit
 
 - **The vault** is a folder of markdown files on your computer.

@@ -34,6 +34,7 @@ hooks:
   - hooks/wikilinks.py
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -44,6 +45,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Explore a Real Vault: https://adamcee.github.io/agentic-vault/night-post/
   - Installation:
     - Quickstart: installation/quickstart.md
     - Obsidian Setup (Recommended): installation/obsidian-setup.md

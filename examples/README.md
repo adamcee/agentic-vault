@@ -1,8 +1,8 @@
 # Example Vaults
 
-Three vaults for fictional projects show the protocols at work. Each README has a tour pointing to the files that show each protocol.
+> **Start with Night Post: [explore it as an interactive site](https://adamcee.github.io/agentic-vault/night-post/).** It's the largest example, six months into a fictional indie RPG, with graph view, backlinks, and search.
 
-Night Post is the largest, about six months in, and you can [explore it as an interactive site](https://adamcee.github.io/agentic-vault/night-post/) with graph view, backlinks, and search.
+Three vaults for fictional projects show the protocols at work. Each README has a tour pointing to the files that show each protocol.
 
 | Example | Project | What it shows |
 |---|---|---|

@@ -8,6 +8,8 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
 
+> **See a real vault: [explore Night Post](https://adamcee.github.io/agentic-vault/night-post/).** A six-month vault for a fictional indie RPG, with decisions, playtests, market research, a world bible, and session logs, browsable as an interactive site with graph view and backlinks.
+
 ## How It Works
 
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
@@ -35,13 +37,15 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 └── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
-You can [explore the Night Post example](https://adamcee.github.io/agentic-vault/night-post/), an indie game vault, as an interactive site. The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
+The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
 
 ## Setup
 
 **Recommended setup:** [Obsidian](https://obsidian.md/) plus a desktop AI app that supports MCP (Model Context Protocol), such as Claude Desktop or the Codex app, backed up to a private GitHub repository. You chat with the AI however you like and every chat can read and write the vault, while you view and edit the same files in Obsidian.
 
 [Obsidian Setup](website/docs/installation/obsidian-setup.md) walks through it and lists the plugins that help the AI.
+
+**New to GitHub or the command line?** The [Quickstart](website/docs/installation/quickstart.md) has a prompt you can give your AI so it does the setup with you.
 
 The tiers below cover other ways to work. You can move up a tier later.
 

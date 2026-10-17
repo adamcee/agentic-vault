@@ -8,6 +8,11 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
 
+!!! example "See a real vault"
+    **Night Post** is a six-month vault for a fictional indie RPG: decisions, playtests, market research, accessibility audits, a world bible, and the agent's session logs, all linked. Explore it the way you'd explore your own, with graph view, backlinks, and search.
+
+    [Explore the Night Post vault](https://adamcee.github.io/agentic-vault/night-post/){ .md-button .md-button--primary }
+
 ## How It Works
 
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
@@ -25,4 +30,4 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 - Find and recheck the decisions that new evidence affects.
 - Point coding agents in separate repos at the vault for constraints and decisions.
 
-Start with the [Quickstart](installation/quickstart.md), or browse the [example vaults](examples/README.md): a web app, a small business, and an indie game.
+Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you, or [explore Night Post](https://adamcee.github.io/agentic-vault/night-post/).
