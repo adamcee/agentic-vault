@@ -10,7 +10,7 @@ If a query requires domain-specific knowledge, agents must route to the correspo
   - System design documents and specifications.
 - **`decisions/`**
   - `technical/`: ADRs for stack, database, and infrastructure.
-  - `product/`: PDRs for pedagogy, GTM, and personas.
+  - `product/`: PDRs for product, UX, and business decisions.
   - `_BASES_SCHEMA.md`: Frontmatter schema for structured ADR/PDR search.
 - **`strategy/`**
   - Current product and business strategy.
@@ -20,7 +20,7 @@ If a query requires domain-specific knowledge, agents must route to the correspo
 - **`ideas/`**
   - Raw idea captures awaiting evaluation. Propose *something that could exist*. Frontmatter includes `resolved-by` field.
 - **`research/`**
-  - Market research, learning science, competitive intel, session syntheses.
+  - Market research, domain research, competitive intel, session syntheses.
 - **`prototype/`** (or `src/`, `app/`)
   - `implementation-plan.md`: Vault ledger — active phases and open tasks.
   - `implementation-logs/`: Weekly append-only session logs.

@@ -1,39 +1,33 @@
 # The Session Protocol
 
-A fresh AI session has no memory of your project. Every session starts from zero. The session protocol is the boot sequence that gives it the context it needs.
+Every substantive session starts with the same four steps, so a new session begins from the project's current state.
 
-## The Boot Sequence
+## The Steps
 
-Every substantive session begins with the same sequence:
+1. **Read `SYSTEM.md`.** Tool-specific pointer files (`CLAUDE.md`, `GEMINI.md`) send the AI here. It holds the current phase, hard constraints, standing decisions, and pointers to everything else.
+2. **Read `AGENTS.md`** if present. It maps which directories hold what and which files are authoritative.
+3. **Find files changed since the last session.** One search catches work done outside the master file's awareness. This step is skipped most often, and skipping it is the usual cause of sessions working from stale context.
+4. **Load the context the task needs.** A coding session needs the architecture docs and relevant ADRs. A strategy session needs the strategy docs. `SYSTEM.md` lists which files go with which kind of work.
 
-1. **Read `SYSTEM.md`** (the entry-point document, referred to as `CLAUDE.md` or `GEMINI.md` in tool-specific rule files). This is the routing document — not an encyclopedia, not a marketing brief. Current phase, hard constraints, standing decisions, pointers to everything else.
-2. **Read `AGENTS.md`** if present. The vault topology map — which directories hold what, which files are authoritative.
-3. **Find modified files since last session.** A single search for recently-changed files catches anything added outside the routing doc's awareness. This is the step most often skipped, and the one that most often causes AI sessions to work from stale context.
-4. **Load task-specific context.** Different tasks need different files. A strategy session needs the strategy docs and personas. A coding session needs the architecture doc and relevant ADRs. The routing doc tells the session which context to load for which kind of work.
+## Why Not Just Explain the Project Each Time
 
-## Why This Beats "Just Tell the AI What You Want"
+Explaining the project fresh in every chat works for small projects and fails for larger ones:
 
-The alternative to a boot sequence is explaining the project fresh in every chat. That works for small projects. It fails for anything larger, for three reasons:
+- **You leave things out.** You forget the constraint you set two weeks ago, and the AI proposes the option you already rejected.
+- **Each retelling loses detail.** The project drifts away from its actual state.
+- **It costs time and tokens** that could go to the work.
 
-- **The human explanation is always incomplete.** You will forget to mention the constraint you decided on two weeks ago. The AI will confidently propose the thing you already rejected.
-- **The explanation is lossy.** Each retelling drops details. The project drifts away from its actual state with every session.
-- **The explanation is expensive.** Every chat that re-establishes context burns time and tokens that could have gone into the actual work.
+Pasting larger and larger context blocks into the first message has the same problem at a slower pace. The context bloats and the AI's attention degrades.
 
-The boot sequence replaces the retelling with a read.
+## Keep SYSTEM.md Small
 
-## The Routing Document Is Not an Encyclopedia
+`SYSTEM.md` routes a session to the right documents. It is not an archive. Keep it to:
 
-A common mistake is to let the entry-point document grow into a compendium — every decision, every research finding, every historical note. Don't. The file is a router. Keep it small.
+- **Hard constraints** that no session may violate without a decision record.
+- **The current phase.**
+- **Standing decisions**, as a short list.
+- **Pointers** to where the details live.
 
-- **Hard constraints.** The things no session is permitted to violate without a decision record.
-- **Current phase.** What the project is actively working on.
-- **Standing decisions.** The short list of locked-in choices.
-- **Pointers.** Links to everywhere the detail actually lives.
+Once it grows past that, it stops doing its job.
 
-Details belong in the documents themselves. The routing doc exists so a fresh session knows which documents to read. Once it grows past that job, it stops serving it.
-
-## The Common Failure Mode
-
-Most projects that try to give their AI persistent memory do so by pasting ever-larger blocks of context into the first message of every chat. It works for a while, then it doesn't — the context bloats, the AI's attention degrades, and the experience slowly worsens in a way that's hard to attribute. The boot sequence replaces the paste with a protocol. The protocol scales; the paste doesn't.
-
-See also: [The SYSTEM.md Primacy](system-primacy.md) for the single-source-of-truth principle this sequence depends on.
+See also [SYSTEM.md Primacy](system-primacy.md).

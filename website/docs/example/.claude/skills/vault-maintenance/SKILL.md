@@ -10,7 +10,7 @@ This skill guides the AI agent through a vault audit.
 ## 🛠️ Tooling & Fallbacks
 
 **Primary Tool (Obsidian CLI):**
-If the project uses Obsidian and the CLI is installed (e.g. `/Applications/Obsidian.app/Contents/MacOS/obsidian`), use it for robust graph queries.
+If the project uses Obsidian and the CLI is installed (e.g. `/Applications/Obsidian.app/Contents/MacOS/obsidian`), use it for graph queries.
 - Broken links: `obsidian unresolved`
 - Orphans: `obsidian orphans`
 

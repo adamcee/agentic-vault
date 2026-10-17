@@ -1,16 +1,16 @@
 # The Ideas Lifecycle
 
-Not every idea is ready for an ADR. Most aren't. Without somewhere to put the raw ones, they live in chat logs and die there.
+Raw ideas go in `ideas/` as short notes until they are promoted, rejected, or absorbed. Most ideas aren't ready for a decision record, and without a place to put them they get lost in chat logs.
 
 ## The Problem
 
-Project ideas arrive faster than you can evaluate them. A decision record is the wrong container for *"what if we tried X?"* — it demands context, alternatives, and consequences before anyone knows if the idea is worth that effort. Chat messages are the wrong container because they disappear.
+A decision record is the wrong place for *"what if we tried X?"* It asks for context, alternatives, and consequences before anyone knows whether the idea is worth that effort. A chat message is the wrong place because it disappears.
 
-The result, without a protocol: good ideas get lost, and the same half-formed ideas resurface every few weeks because nobody wrote down the last round of thinking.
+Without a home for raw ideas, good ones get lost and weak ones come back every few weeks.
 
 ## The `ideas/` Directory
 
-Raw ideas go in `ideas/`. An idea note is lighter than a decision record — just a name, a date, a few sentences, and a `resolved-by` field that starts empty.
+An idea note holds a name, a date, a few sentences, and a `resolved-by` field that starts empty.
 
 ```yaml
 ---
@@ -22,23 +22,19 @@ resolved-by: null
 ---
 ```
 
-## The Four Resolutions
+## Resolutions
 
-Ideas don't stay in `ideas/` forever. Each one eventually resolves to one of:
+Each idea ends in one of four states:
 
-- **Promoted to decision** — the idea matured enough for an ADR or PDR. `resolved-by: "[[decisions/technical/ADR-T0XX]]"`.
-- **Rejected** — evaluated and declined. A full rejection ADR is optional for lightweight cases. `resolved-by: "rejected — [brief reason]"`.
-- **Absorbed** — the idea got folded into another document. `resolved-by: "absorbed into [[path/to/doc]]"`.
-- **Still open** — the note stays as-is.
+- **Promoted.** It became an ADR or PDR. `resolved-by: "[[decisions/technical/ADR-T0XX]]"`.
+- **Rejected.** It was evaluated and declined. A full rejection ADR is optional for small cases. `resolved-by: "rejected — [brief reason]"`.
+- **Absorbed.** It was folded into another document. `resolved-by: "absorbed into [[path/to/doc]]"`.
+- **Open.** The note stays as is.
 
-## Why This Is Separate from Drafts and Concepts
+## Ideas, Concepts, and Drafts
 
-Three directories handle three different states. They are not the same thing:
+- **`ideas/`** holds proposals: *"What if we built X?"*
+- **`concepts/`** holds definitions of existing terms: *"What is X?"*
+- **`drafts/`** holds AI-generated content waiting to be tightened before it enters the vault.
 
-- **`ideas/`** — *"What if we built X?"* Propositions awaiting evaluation.
-- **`concepts/`** — *"What is X?"* Definitions and link hubs for existing terms.
-- **`drafts/`** — AI-generated content awaiting tightening before vault admission.
-
-## The Common Failure Mode
-
-Without this directory, AI sessions end up proposing the same idea every two weeks because there's no record of the previous round of thinking. The `ideas/` directory is the shortest-form memory in the vault. It costs almost nothing to maintain and prevents the single most common form of relitigation.
+The `ideas/` folder costs little to maintain and stops the AI from proposing the same idea every two weeks.

@@ -1,10 +1,9 @@
-# The SYSTEM.md Primacy
+# SYSTEM.md Primacy
 
-The core philosophy of the Agentic Vault is the **Single Source of Truth (SSOT)**. 
+One file, `SYSTEM.md`, is the single source of truth for the project. Every AI tool reads it first.
 
-When you use multiple AI tools (e.g., Cursor for coding, Claude Desktop for planning, Gemini CLI for research), their context windows easily drift out of sync. By enforcing a single `SYSTEM.md` file that all agents must read, you guarantee that your architectural decisions, directory maps, and rules are universally applied.
+If you use several AI tools (Cursor for code, Claude Desktop for planning, Gemini CLI for research), each has its own rule file, and those files drift apart. With one master file, every tool works from the same decisions, constraints, and directory map.
 
-### The "Hub and Spoke" Architecture
-Every agent-specific rule file (`.cursorrules`, `CLAUDE.md`, `GEMINI.md`) in this vault is simply a "spoke"—a tiny pointer file instructing the AI to read the central "hub" (`SYSTEM.md`).
+## Pointer Files
 
-This prevents you from having to manually update 4 different configuration files every time you change a project rule.
+Each tool-specific rule file (`.cursorrules`, `CLAUDE.md`, `GEMINI.md`) is a few lines long and tells the AI to read `SYSTEM.md`. When a project rule changes, you edit one file instead of four.

@@ -1,15 +1,16 @@
 # Decision Records (ADRs & PDRs)
 
-We do not just record *what* we built; we record *why* we chose it, and what we rejected.
+Decision records capture what you chose, what you rejected, and why. They live in `decisions/`: Architecture Decision Records (ADRs) for technical choices and Product Decision Records (PDRs) for product choices.
 
-The Agentic Vault uses Architecture Decision Records (ADRs) and Product Decision Records (PDRs) located in the `decisions/` directory.
+## Why AI Needs Them
 
-### Why this matters for AI
-LLMs are highly prone to **relitigating decisions**. If you rejected using MongoDB three weeks ago, a fresh AI session today might suggest MongoDB again. 
+A fresh AI session has no record of past decisions, so it reopens them. If you rejected MongoDB three weeks ago, today's session may suggest it again.
 
-By keeping a formal ADR that states "MongoDB was rejected because of X," the AI will read the decision record, understand the context, and suggest a different path without you having to correct it.
+An ADR stating "MongoDB was rejected because of X" stops this. The AI reads the record and works within it.
 
-### Propagation and Reweave
-The Agentic Vault relies on two protocols to keep decisions healthy:
-1. **Decision Propagation Protocol:** When a new decision is made, the AI is instructed to actively push that decision into the implementation plan and the project `CONSTITUTION.md`.
-2. **Reweave Protocol:** When new research or information arrives, the AI must look backward at existing ADRs to see if the new evidence strengthens, weakens, or invalidates a past decision.
+## Keeping Records Current
+
+Two protocols keep decisions accurate over time:
+
+1. **Decision Propagation.** When a decision is made, the AI pushes it into the implementation plan and `CONSTITUTION.md`.
+2. **[Reweave](reweave-protocol.md).** When new information arrives, the AI checks whether it strengthens, weakens, or invalidates existing decisions.

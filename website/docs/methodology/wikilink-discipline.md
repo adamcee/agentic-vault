@@ -1,34 +1,32 @@
 # Wikilink Discipline
 
-Every claim that rests on another vault document links to it. This is not decoration. It is how the vault remains navigable as it grows.
+Every reference to another vault document is a wikilink. Links let humans and AI agents navigate the vault by following connections instead of running full-text searches.
 
-## The Compounding Investment
-
-The cost of adding a link is near-zero. The cost of *not* adding it accumulates every week. A well-linked vault can be traversed by following connections — both by humans browsing and by AI agents searching for context. A poorly-linked vault requires full-text search for everything, which is slow for humans and expensive for AI.
+A link costs seconds to add. A missing link costs a search every time someone needs that connection.
 
 ## What to Link
 
-- **Empirical claims** → the vault research doc that supports them (see [Research Traceability](research-traceability.md)).
-- **Decision references** → the specific ADR or PDR.
-- **Concept mentions** → the concept note that defines the term.
-- **Cross-document references** → the canonical location, not a vague description of it.
+- **Empirical claims** link to the vault research doc that supports them (see [Research Traceability](research-traceability.md)).
+- **Decision references** link to the specific ADR or PDR.
+- **Terms** link to the concept note that defines them.
+- **Other cross-references** link to the canonical location, not a vague description of it.
 
 ## What Not to Link
 
-- Self-links. A doc should not link to itself.
-- Generic English words that happen to match a filename.
-- Content inside YAML frontmatter or code blocks.
+- A doc to itself.
+- Common words that happen to match a filename.
+- Text inside YAML frontmatter or code blocks.
 
-## Link Verification
+## Verifying Links
 
-A broken link is worse than no link — it signals a connection that doesn't exist.
+A broken link points to a connection that doesn't exist, which is worse than no link.
 
-- After creating or editing links, verify the targets resolve. AI sessions can read the target path to confirm. Batch verification scripts work too.
-- Directory paths do not resolve as notes. Link to the directory's README instead.
-- Intentional forward-references (linking a note that doesn't exist yet) are acceptable if flagged inline: *`[[future/note]] (does not exist yet — create when X happens)`*.
+- After creating or editing links, confirm the targets exist. An AI session can read each target path, or a script can check them in bulk.
+- Directory paths don't resolve as notes. Link to the directory's README instead.
+- Links to notes that don't exist yet are fine if flagged inline: *`[[future/note]] (does not exist yet — create when X happens)`*.
 
-## The Common Failure Mode
+## Why It Matters
 
-AI sessions produce documents that reference other work in prose (*"as discussed in the strategy doc"*) without actually linking. These references are invisible to the graph. They do not surface in backlink queries, do not traverse in graph view, do not survive the [Reweave Protocol](reweave-protocol.md). A reference without a link is a claim that can't be followed.
+AI sessions often mention other work in prose (*"as discussed in the strategy doc"*) without linking. Those references don't appear in backlinks or graph view, and the [Reweave Protocol](reweave-protocol.md) can't find them.
 
-Wikilinks are what make every other protocol in this methodology possible.
+The other protocols depend on links to find affected documents and connect claims to evidence.

@@ -27,7 +27,7 @@ At the start of any session, check for files modified since the last session dat
 ## ⚠️ Hard Constraints — Never Violate Without an ADR
 
 - **journal/ is human-only** — never write to `journal/` for any reason. Human owner's personal daily record. Read-only for AI.
-- **Terse by default** — vault documents follow the Paragraph Ban, BLUF discipline, and the 7-point tightening checklist (see Writing Discipline section). 
+- **Terse by default** — vault documents follow the Paragraph Ban, BLUF discipline, and the 10-point tightening checklist (see Writing Discipline section). 
 - **Wikilink discipline** — when editing any vault document, use `[[wikilinks]]` to connect references to their canonical vault location. Every claim that rests on a research doc, ADR, or strategy section should link to it.
 - **Action items route to the vault ledger only.** AI sessions route new action items to `prototype/implementation-plan.md` (or equivalent task tracker). 
 - **No orphan checkboxes.** `- [ ]` task checkboxes for tracking completion appear only in canonical task lists, never scattered across standard documents.
@@ -43,7 +43,7 @@ At the start of any session, check for files modified since the last session dat
 
 ## Writing Discipline & Multi-Agent Interoperability
 
-All vault documents are treated as high-leverage state machines for multi-agent LLM parsing. 
+Every AI session reads these documents cold. Write them so a reader with no context finds the main point fast.
 
 **Tightening Checklist:** Every document written or substantially edited by an AI agent must pass this checklist before the task is marked complete:
 1. First sentence is BLUF (Bottom Line Up Front — core claim).
@@ -108,7 +108,7 @@ See `concepts/` for full atomic definitions.
 
 All major decisions have ADRs or PDRs. Before proposing any architectural or product change, check:
 - `/decisions/technical/` for stack/architecture decisions
-- `/decisions/product/` for product/pedagogical decisions
+- `/decisions/product/` for product decisions
 
 **How to search decisions:** Query the `status` or `tags` in YAML frontmatter rather than reading all files. (e.g., `obsidian search query="[status: accepted]" path="decisions/"`).
 

@@ -1,74 +1,57 @@
 # The Agentic Vault
 
-**A shared brain for you and your AI.**
+**Project memory for long-running work with AI.**
 
-Whether you are designing a new product, architecting software, or world-building a novel, AI is an incredible thought partner. But it has a fatal flaw: **Amnesia**. 
+AI models forget everything between chats. On a project that lasts weeks or months, the AI suggests ideas you rejected last week, contradicts decisions you made last month, and needs the project re-explained in every new session.
 
-If you use Claude, Gemini, Cursor, or ChatGPT for complex projects, you have experienced "Context Rot":
-- The AI forgets the core values of your product you established yesterday.
-- It suggests ideas you already rejected last week.
-- It loses the thread of *why* you are building something, forcing you to start from scratch in every new chat.
+The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first instead of starting from zero.
 
-The **Agentic Vault** solves this. It is an AI-native project knowledge base. It provides a structured framework of folders, rules, and protocols that act as a persistent, long-term memory for your AI.
+## What It Lets You Do
 
----
+- **Stop and restart sessions freely.** Each session records where it left off. The next one picks up from there, even after weeks away.
+- **Use several AI tools on one project.** Claude Code, Gemini CLI, Cursor, and chat apps all read the same master file.
+- **Keep settled questions settled.** Decisions and rejected alternatives are written down, so the AI stops reopening them.
+- **Tie decisions to evidence.** Claims link to the research behind them. When new evidence arrives, you can find the decisions it affects.
+- **Plan in one place and build in another.** Coding agents in separate code repos can read the vault for constraints and decisions.
+- **Keep non-code work in the same system.** Strategy, research, and business planning sit next to the technical docs.
 
-## 🗂️ Repository Structure
-
-This repository contains the Agentic Vault ecosystem. 
+## Repository Structure
 
 ```text
 /
-├── template/                  ← The pristine, reusable vault template.
-├── example/                   ← A populated example (BrewTrack app) showing ADRs in action.
-└── website/                   ← The MkDocs documentation hub source code.
+├── template/   ← The vault template. Copy this to start a project.
+├── example/    ← A filled-in example vault (BrewTrack, a coffee-shop loyalty app).
+└── website/    ← Source for the documentation site.
 ```
 
-*Note: The meta-vault we used to build this project (a live case study of the methodology) has been extracted into its own interactive Quartz site. You can explore it at the [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta) repository.*
+The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
 
-**If you just want to use the template:** Copy the `template/` directory or run `./template/scripts/init-vault.sh my-new-project`.
+## Setup
 
----
+Pick the tier that matches how you use AI. You can move up a tier later.
 
-## 🚀 Installation & Setup
+### Tier 1: Web chat (Claude.ai, Gemini, ChatGPT)
 
-This vault is designed to degrade gracefully. Whether you are a non-technical founder or a senior systems architect, you can use this framework.
+1. Copy the `template/` folder.
+2. Open `SYSTEM.md` in a text editor and fill in the bracketed sections.
+3. Paste the contents of `SYSTEM.md` as the first message of each new chat.
 
-### Tier 1: The Web App User (Non-Technical)
-*You use Claude.ai, Gemini Advanced, or ChatGPT in your browser.*
-1. Download or clone this repository and copy the `template/` folder.
-2. Open `SYSTEM.md` in any text editor and fill out the `[Replace this section...]` brackets.
-3. **The Workflow:** Whenever you start a new chat, copy the contents of your filled-out `SYSTEM.md` and paste it as your very first message.
+### Tier 2: AI IDE (Cursor, Windsurf, Roo Code)
 
-### Tier 2: The IDE Prosumer (Cursor, Windsurf, Roo Code)
-*You use an AI-native IDE.*
-1. Run `./template/scripts/init-vault.sh my-new-project` to scaffold the vault.
-2. Open `my-new-project` in your IDE.
-3. The included `.cursorrules` and `.windsurfrules` files are already configured to force the AI to read your `SYSTEM.md` before taking action.
-4. **The Workflow:** Just start chatting in your IDE. The context is automatically injected.
+1. Run `./template/scripts/init-vault.sh my-new-project`.
+2. Fill in `SYSTEM.md`.
+3. Open `my-new-project` in your IDE. The included `.cursorrules` and `.windsurfrules` tell the AI to read `SYSTEM.md` before acting.
 
-### Tier 3: The CLI Power User (Claude Code, Gemini CLI)
-*You operate directly in the terminal.*
-1. Run `./template/scripts/init-vault.sh my-new-project` to scaffold the vault.
-2. Fill out `SYSTEM.md` and `architecture/CONSTITUTION.md`.
-3. The included `CLAUDE.md` and `GEMINI.md` files act as pointers, forcing your CLI agents to read the SSOT.
-4. **The Workflow:** Navigate to the folder in your terminal. Run `claude` or `gemini`. The agent will automatically load the vault topology, parse your standing decisions, and execute tasks against your constraints.
+### Tier 3: CLI agents (Claude Code, Gemini CLI)
 
----
+1. Run `./template/scripts/init-vault.sh my-new-project`.
+2. Fill in `SYSTEM.md` and `architecture/CONSTITUTION.md`.
+3. Run `claude` or `gemini` from the project folder. `CLAUDE.md` and `GEMINI.md` point the agent to `SYSTEM.md` at session start.
 
-## 🪄 The AI Setup Wizard (Recommended)
+## Setup Wizard
 
-Don't want to fill out the boilerplate yourself? Let your AI do it.
-
-1. Open `template/SETUP_WIZARD.md`.
-2. Copy the entire prompt.
-3. Paste it into your AI of choice (Claude, Gemini, Cursor) while in your new project directory.
-4. The AI will ask you a few questions about your project and autonomously populate `SYSTEM.md`, `AGENTS.md`, and `CONSTITUTION.md` for you!
-
----
+To have the AI fill in the template, paste `template/SETUP_WIZARD.md` into your AI tool and answer its four questions. It fills in `SYSTEM.md`, `AGENTS.md`, and `architecture/CONSTITUTION.md`, or prints them for you to paste if it has no file access.
 
 ## Design & Goals
 
-AI models are powerful thought partners that forget between sessions. On projects that last longer than a single chat, this amnesia causes decisions to be relitigated and rejected ideas to resurface. The Agentic Vault solves this by treating the project folder as the single source of truth—complete with standing decisions, research traceability, and strict writing discipline.
-
-For a comprehensive dive into the philosophy, protocols, and field tests that shaped this methodology, read the full [Design & Goals](website/docs/methodology/design-and-goals.md) document.
+The methodology came out of months of heavy AI use on a real project, and each protocol was added to fix a specific, recurring failure. [Design & Goals](website/docs/methodology/design-and-goals.md) covers the failures, the protocols, and what worked.

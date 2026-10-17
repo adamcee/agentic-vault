@@ -1,17 +1,17 @@
 # Evidence Maturity Tags
 
-Not all research carries equal weight. A thirty-year replicated finding and a preprint from last month both deserve to be cited — and neither deserves to be cited the same way.
+Each citation carries a tag stating how well established its evidence is. A thirty-year replicated finding and last month's preprint both belong in the vault, but they shouldn't carry the same weight.
 
 ## The Four Tags
 
 | Tag | Meaning |
 |---|---|
 | `[established]` | 10+ years, extensively replicated, foundational to the field. |
-| `[supported]` | Multiple studies, strong theoretical grounding, less than a decade of replication. |
-| `[emerging]` | Single study or very recent work. Promising but not yet replicated. |
-| `[theoretical]` | Conceptual framework or design principle without direct empirical validation in this specific context. |
+| `[supported]` | Multiple studies and strong theoretical grounding, with less than a decade of replication. |
+| `[emerging]` | A single study or very recent work, not yet replicated. |
+| `[theoretical]` | A conceptual framework without direct empirical validation in this context. |
 
-A fifth tag, `[secondary]`, marks AI-generated syntheses or literature reviews that are not primary sources. It goes in the research doc's frontmatter, not inline.
+A fifth tag, `[secondary]`, marks AI-generated syntheses and literature reviews. It goes in the research doc's frontmatter, not inline.
 
 ## Usage
 
@@ -21,14 +21,12 @@ Tags appear inline next to the citation:
 The protocol works in practice ([[research/source-name]] [supported]).
 ```
 
-Tags also go in the research doc's own YAML frontmatter (`evidence-maturity: supported`) so the vault can be queried for all `[emerging]` claims when new replication evidence arrives.
+Tags also go in the research doc's YAML frontmatter (`evidence-maturity: supported`). You can then query the vault for every `[emerging]` claim when new replication evidence arrives.
 
-## Why This Matters
+## Why It Matters
 
-Your project will outlive any specific piece of evidence. A system that treats a single emerging study the same as a thirty-year consensus will make confident commitments it cannot keep. A system that refuses to cite anything that isn't established will never ship.
+If you treat a single new study like a thirty-year consensus, you make commitments the evidence can't support. If you cite only established work, you can't act on anything new.
 
-The tags let you do both. An `[emerging]` citation can anchor a decision, but the tag is a flag — *"this is a bet on early evidence; revisit when replication arrives."* When that replication does arrive, the [Reweave Protocol](reweave-protocol.md) can query the vault for every `[emerging]` claim that depended on the prior study and upgrade the tags or revisit the decisions.
+The tags let you do both: an `[emerging]` citation can support a decision while marking it as a bet to revisit. When replication arrives, the [Reweave Protocol](reweave-protocol.md) finds the decisions that depended on the earlier study.
 
-## The Common Failure Mode
-
-AI-generated documents treat every citation as equally authoritative. The model cannot tell a peer-reviewed meta-analysis apart from a conference abstract, because the training data treats all prose the same. The tag system forces a human-in-the-loop calibration step. Once the tags are on the frontmatter, future AI sessions inherit the calibration.
+AI-written documents cite a meta-analysis and a conference abstract in the same confident tone. Tagging adds a human calibration step, and later sessions inherit it from the frontmatter.

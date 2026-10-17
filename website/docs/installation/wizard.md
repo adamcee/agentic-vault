@@ -1,9 +1,10 @@
-# The AI Setup Wizard
+# The Setup Wizard
 
-The fastest way to configure your Agentic Vault is to have your AI do it for you.
+`SETUP_WIZARD.md` is a prompt that has your AI fill in the template.
 
-1. Open the `SETUP_WIZARD.md` file in the root of the template.
-2. Copy its entire contents.
-3. Paste it into your AI (Claude Code, Cursor, Gemini Advanced, or ChatGPT) while in the template directory.
-4. The AI will adopt the "Setup Wizard" persona and ask you 4 questions about your project.
-5. Once you answer, it will autonomously fill out your `SYSTEM.md`, `AGENTS.md`, and `CONSTITUTION.md`!
+1. Open `SETUP_WIZARD.md` in the root of your new vault.
+2. Copy the prompt below the line.
+3. Paste it into your AI tool (Claude Code, Cursor, Gemini, or ChatGPT) from the vault directory.
+4. Answer its four questions about your project.
+
+With file access, the AI fills in `SYSTEM.md`, `AGENTS.md`, and `architecture/CONSTITUTION.md` directly. Without it, the AI prints the finished files for you to paste.

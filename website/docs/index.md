@@ -1,24 +1,23 @@
 # The Agentic Vault
 
-**A shared brain for you and your AI.**
+**Project memory for long-running work with AI.**
 
-Whether you are designing a new product, architecting software, or world-building a novel, AI is an incredible thought partner. But it has a fatal flaw: **Amnesia**. 
+AI models forget everything between chats. On a project that lasts weeks or months, the AI suggests ideas you already rejected, contradicts decisions you already made, and needs the project re-explained in every session.
 
-If you use Claude, Gemini, Cursor, or ChatGPT for complex projects, you have experienced "Context Rot":
-- The AI forgets the core values of your product you established yesterday.
-- It suggests ideas you already rejected last week.
-- It loses the thread of *why* you are building something, forcing you to start from scratch in every new chat.
-
-The **Agentic Vault** solves this. It is an AI-native project knowledge base. It provides a structured framework of folders, rules, and protocols that act as a persistent, long-term memory for your AI.
+The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first.
 
 ## How It Works
 
-Instead of relying on the AI's temporary chat history, you treat your project folder as the Single Source of Truth:
+1. **One master file.** `SYSTEM.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every session reads it first.
+2. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why. The AI checks these before proposing changes.
+3. **Writing discipline.** Vault documents put the main point first and cut filler, so an AI can load more of the project in less context.
 
-1. **The `SYSTEM.md` Primacy:** You establish one master document. Every time you start a session, the AI reads this first, instantly recalling your project's goals, constraints, and current phase.
-2. **Decision Records:** When you and the AI make a major decision (e.g., "We are targeting college students, not professionals"), you write it down. The AI checks these records before suggesting new ideas.
-3. **Writing Discipline:** The vault enforces strict rules (like "Bottom Line Up Front") so the AI can read your entire project history in seconds without wasting tokens on fluff.
+## What It Lets You Do
 
-It transforms your AI from a temporary chatbot into a persistent co-founder that actually remembers your project.
+- Stop and restart sessions without re-explaining the project.
+- Use Claude, Gemini, Cursor, and chat apps on the same project without their instructions drifting apart.
+- Keep rejected ideas from coming back.
+- Find and recheck the decisions that new evidence affects.
+- Point coding agents in separate repos at the vault for constraints and decisions.
 
-Get started by checking out the [Installation Guide](installation/quickstart.md) or explore the live [BrewTrack Example Vault](example/) to see it in action.
+Start with the [Quickstart](installation/quickstart.md), or browse the [BrewTrack example vault](example/README.md).
