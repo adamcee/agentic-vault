@@ -11,7 +11,7 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 !!! example "See a real vault"
     **Night Post** is a six-month vault for a fictional indie RPG: decisions, playtests, market research, accessibility audits, a world bible, and the agent's session logs, all linked. Explore it the way you'd explore your own, with graph view, backlinks, and search.
 
-    [Explore the Night Post vault](https://adamcee.github.io/agentic-vault/night-post/){ .md-button .md-button--primary }
+    [Explore the Night Post vault](https://adamcee.github.io/night-post-vault/){ .md-button .md-button--primary } [See all examples](examples.md){ .md-button }
 
 ## How It Works
 
@@ -30,4 +30,4 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 - Find and recheck the decisions that new evidence affects.
 - Point coding agents in separate repos at the vault for constraints and decisions.
 
-Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you, or [explore Night Post](https://adamcee.github.io/agentic-vault/night-post/).
+Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you, or [explore Night Post](https://adamcee.github.io/night-post-vault/).

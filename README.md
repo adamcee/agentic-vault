@@ -8,7 +8,7 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
 
-> **See a real vault: [explore Night Post](https://adamcee.github.io/agentic-vault/night-post/).** A six-month vault for a fictional indie RPG, with decisions, playtests, market research, a world bible, and session logs, browsable as an interactive site with graph view and backlinks.
+> **See a real vault: [explore Night Post](https://adamcee.github.io/night-post-vault/).** A six-month vault for a fictional indie RPG, with decisions, playtests, market research, a world bible, and session logs, browsable as an interactive site with graph view and backlinks.
 
 ## How It Works
 
@@ -33,11 +33,10 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 ```text
 /
 ├── template/   ← The vault template. Copy this to start a project.
-├── examples/   ← Three filled-in example vaults: software, business, and creative.
 └── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
-The vault used to build this project is published separately at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
+Example vaults live in their own repos: [Night Post](https://github.com/adamcee/night-post-vault), an indie RPG ([explore it](https://adamcee.github.io/night-post-vault/)), and [Curbside Cycles](https://github.com/adamcee/curbside-cycles-vault), a small business ([explore it](https://adamcee.github.io/curbside-cycles-vault/)). The vault used to build this project is published at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
 
 ## Setup
 

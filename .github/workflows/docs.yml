@@ -24,14 +24,6 @@ jobs:
       - name: Build Docs
         working-directory: website
         run: uv run --locked mkdocs build
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Build Night Post vault site
-        run: website/quartz/build.sh website/site/night-post
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

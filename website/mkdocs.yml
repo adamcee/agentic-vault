@@ -30,9 +30,6 @@ plugins:
   - search
   - awesome-pages
 
-hooks:
-  - hooks/wikilinks.py
-
 markdown_extensions:
   - attr_list
   - admonition
@@ -45,7 +42,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Explore a Real Vault: https://adamcee.github.io/agentic-vault/night-post/
+  - Explore a Real Vault: https://adamcee.github.io/night-post-vault/
   - Installation:
     - Quickstart: installation/quickstart.md
     - Obsidian Setup (Recommended): installation/obsidian-setup.md
@@ -66,9 +63,4 @@ nav:
     - Vault Maintenance: methodology/vault-maintenance.md
     - AI Writing Discipline: methodology/writing-discipline.md
     - Sources & Further Reading: methodology/sources.md
-  - Examples:
-    - Overview: examples/README.md
-    - Software (Brigade): examples/software/README.md
-    - Business (Curbside Cycles): examples/business/README.md
-    - Creative (Night Post): examples/creative/README.md
-    - Explore Night Post (interactive): https://adamcee.github.io/agentic-vault/night-post/
+  - Examples: examples.md
