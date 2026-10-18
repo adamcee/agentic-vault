@@ -1,0 +1,4 @@
+/* Example table rows open the example's website when clicked. */
+.md-typeset table tr.example-row {
+  cursor: pointer;
+}
