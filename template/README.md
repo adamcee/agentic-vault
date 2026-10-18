@@ -1,8 +1,8 @@
 # The Agentic Vault
 
-**A markdown vault that gives AI sessions persistent project memory.**
+**The Agentic Vault is a project knowledge base that you and your AI agents share, built on plain markdown files, Obsidian, and git.**
 
-AI tools forget everything between sessions, so they reopen settled decisions, suggest options you already rejected, and lose track of what you're building. This vault holds your decisions, research, and plans in plain files that every AI session reads first.
+Every AI session reads this vault first, so your agents remember the decisions you've made, the evidence behind them, and what's already done. Without it, AI tools forget everything between sessions and reopen questions you already settled.
 
 Over time it becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base) (or [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science))): plain markdown you own, read, and edit, tracked with git and searchable by any AI tool.
 

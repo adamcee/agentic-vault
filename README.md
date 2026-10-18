@@ -1,10 +1,8 @@
 # The Agentic Vault
 
-**Project memory for long-running work with AI.**
+**The Agentic Vault is a project knowledge base that you and your AI agents share, built on plain markdown files, Obsidian, and git.**
 
-AI models forget everything between chats. On a project that lasts weeks or months, the AI suggests ideas you rejected last week, contradicts decisions you made last month, and needs the project re-explained in every new session.
-
-The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first instead of starting from zero.
+Every AI session reads the vault first, so your agents remember the decisions you've made, the evidence behind them, and what's already done. Without it, AI models forget everything between chats: they suggest ideas you already rejected and need the project re-explained every time.
 
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for any AI agent to search.
 
