@@ -6,12 +6,21 @@ AI models forget everything between chats. On a project that lasts weeks or mont
 
 The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first.
 
-Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
+## See It in Action
 
-!!! example "See a real vault"
-    **Night Post** is a six-month vault for a fictional indie RPG: decisions, playtests, market research, accessibility audits, a world bible, and the agent's session logs, all linked. Explore it the way you'd explore your own, with graph view, backlinks, and search.
+Two example vaults show the method on fictional projects. Each repo holds the vault's actual files, which you can clone and open in Obsidian like your own; each website shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
 
-    [Explore the Night Post vault](https://adamcee.github.io/night-post-vault/){ .md-button .md-button--primary } [See all examples](examples.md){ .md-button }
+!!! example "Night Post: an indie RPG, six months in"
+    A three-person team making an adventure game about a night courier. Decisions that changed after playtests, market and accessibility research, a world bible, and the agents' session logs.
+
+    [Explore the site](https://adamcee.github.io/night-post-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/night-post-vault){ .md-button }
+
+!!! example "Curbside Cycles: a small business, five weeks in"
+    A one-person bike-repair van. A survey, a pilot month that changed the pricing, and a rejected storefront lease, with no software involved.
+
+    [Explore the site](https://adamcee.github.io/curbside-cycles-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/curbside-cycles-vault){ .md-button }
+
+The websites exist only to make the examples easy to browse; your own vault doesn't need one. If you want, you can publish all or part of yours the same way.
 
 ## How It Works
 
@@ -23,11 +32,17 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 
 ## What It Lets You Do
 
-- Build a knowledge base you own, in plain files that no vendor controls.
-- Stop and restart sessions without re-explaining the project.
-- Use Claude, Gemini, Cursor, and chat apps on the same project without their instructions drifting apart.
-- Keep rejected ideas from coming back.
-- Find and recheck the decisions that new evidence affects.
-- Point coding agents in separate repos at the vault for constraints and decisions.
+Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown you own, so it works in Obsidian or any editor and tracks changes with git.
 
-Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you, or [explore Night Post](https://adamcee.github.io/night-post-vault/).
+- **Stop and restart sessions** without re-explaining the project.
+- **Use any kind of AI agent.** Coding agents, agents that draft marketing copy, research assistants, and personal assistants can all read the same vault and work from the same decisions.
+- **Use several AI tools on one project.** Claude, Codex, Gemini, Cursor, and chat apps read the same master file, so their instructions don't drift apart.
+- **Keep rejected ideas from coming back,** and find the decisions that new evidence affects.
+
+## Built From Real Work, Shaped to Yours
+
+The rules weren't designed up front. They were added one at a time during months of AI-assisted work on a real project, each to fix a problem that kept recurring ([Design & Goals](methodology/design-and-goals.md)).
+
+Your vault can grow the same way. When you spot a problem or a better way of working, tell your AI to add a rule: it goes in `AGENTS.md` or a page in `vault-guide/`, and every later session follows it.
+
+Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you.

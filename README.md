@@ -6,9 +6,18 @@ AI models forget everything between chats. On a project that lasts weeks or mont
 
 The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first instead of starting from zero.
 
-Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for coding agents and other AI tools to search.
+Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for any AI agent to search.
 
-> **See a real vault: [explore Night Post](https://adamcee.github.io/night-post-vault/).** A six-month vault for a fictional indie RPG, with decisions, playtests, market research, a world bible, and session logs, browsable as an interactive site with graph view and backlinks.
+## See It in Action
+
+Two example vaults show the method on fictional projects. Each repo holds the vault's actual files, which you can clone and open in Obsidian like your own; each website shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
+
+| Example | Explore | Files |
+|---|---|---|
+| **Night Post**: an indie RPG, six months in, with playtests, market research, and a world bible | [Website](https://adamcee.github.io/night-post-vault/) | [Repo](https://github.com/adamcee/night-post-vault) |
+| **Curbside Cycles**: a one-person bike-repair business, five weeks in, with a survey and a pricing pilot | [Website](https://adamcee.github.io/curbside-cycles-vault/) | [Repo](https://github.com/adamcee/curbside-cycles-vault) |
+
+The websites exist only to make the examples easy to browse; your own vault doesn't need one, though you can publish all or part of it the same way.
 
 ## How It Works
 
@@ -22,6 +31,7 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 
 - **Build a knowledge base you own.** The vault grows into a linked map of your project in plain files that no vendor controls.
 - **Stop and restart sessions freely.** Each session records where it left off. The next one picks up from there, even after weeks away.
+- **Use any kind of AI agent.** Coding agents, agents that draft marketing copy, research assistants, and personal assistants can all work from the same vault.
 - **Use several AI tools on one project.** Claude Code, Codex, Gemini CLI, Cursor, and chat apps all read the same master file, `AGENTS.md`.
 - **Keep settled questions settled.** Decisions and rejected alternatives are written down, so the AI stops reopening them.
 - **Tie decisions to evidence.** Claims link to the research behind them. When new evidence arrives, you can find the decisions it affects.
@@ -36,7 +46,7 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 └── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
-Example vaults live in their own repos: [Night Post](https://github.com/adamcee/night-post-vault), an indie RPG ([explore it](https://adamcee.github.io/night-post-vault/)), and [Curbside Cycles](https://github.com/adamcee/curbside-cycles-vault), a small business ([explore it](https://adamcee.github.io/curbside-cycles-vault/)). The vault used to build this project is published at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
+The example vaults live in their own repos (see above). The vault used to build this project is published at [agentic-vault-meta](https://github.com/adamcee/agentic-vault-meta).
 
 ## Setup
 
@@ -70,6 +80,8 @@ The tiers below cover other ways to work. You can move up a tier later.
 
 To have the AI fill in the template, paste `template/SETUP_WIZARD.md` into your AI tool and answer its four questions. It fills in `AGENTS.md` and `architecture/CONSTITUTION.md`, or prints them for you to paste if it has no file access.
 
-## Design & Goals
+## Built From Real Work, Shaped to Yours
 
-The methodology came out of months of heavy AI use on a real project, and each protocol was added to fix a specific, recurring failure. [Design & Goals](website/docs/methodology/design-and-goals.md) covers the failures, the protocols, and what worked.
+The rules weren't designed up front. They were added one at a time during months of AI-assisted work on a real project, each to fix a problem that kept recurring. [Design & Goals](website/docs/methodology/design-and-goals.md) covers the failures, the protocols, and what worked.
+
+Your vault can grow the same way. When you spot a problem or a better way of working, tell your AI to add a rule: it goes in `AGENTS.md` or a page in `vault-guide/`, and every later session follows it.
