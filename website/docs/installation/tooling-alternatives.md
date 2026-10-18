@@ -2,7 +2,9 @@
 
 **Recommendation:** use [Obsidian](https://obsidian.md/) if you can ([Obsidian Setup](obsidian-setup.md)). If you can't or would rather not, pick a desktop editor from the list below that shows backlinks, such as Zettlr, Logseq, or VS Code with Foam.
 
-The vault is plain markdown, so any editor that saves `.md` files works. What you lose outside Obsidian is mostly **backlinks**: the panel that shows every note linking to the one you're reading. Backlinks are how you see that a new research doc touches an old decision, and the graph view shows the vault's shape at a glance. Your AI can still find links by searching the files, but you lose that view.
+The vault is plain markdown, so any editor that saves `.md` files works. What you lose outside Obsidian is mostly **backlinks**, the panel that shows every note linking to the one you're reading, and the graph view of the whole vault.
+
+Backlinks are how you see that a new research doc touches an old decision. Your AI can still find links by searching the files, but you lose that view.
 
 ## Desktop Editors
 

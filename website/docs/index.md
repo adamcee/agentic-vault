@@ -11,12 +11,12 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 Two example vaults show the method on fictional projects. Each repo holds the vault's actual files, which you can clone and open in Obsidian like your own; each website shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
 
 !!! example "Night Post: an indie RPG, six months in"
-    A three-person team making an adventure game about a night courier. Decisions that changed after playtests, market and accessibility research, a world bible, and the agents' session logs.
+    A three-person team is making an adventure game about a night courier. The vault holds decisions that changed after playtests, market and accessibility research, a world bible, and the agents' session logs.
 
     [Explore the site](https://adamcee.github.io/night-post-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/night-post-vault){ .md-button }
 
 !!! example "Curbside Cycles: a small business, five weeks in"
-    A one-person bike-repair van. A survey, a pilot month that changed the pricing, and a rejected storefront lease, with no software involved.
+    A mechanic runs a one-person bike-repair van, with no software involved. The vault holds a survey, a pilot month that changed the pricing, and a rejected storefront lease.
 
     [Explore the site](https://adamcee.github.io/curbside-cycles-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/curbside-cycles-vault){ .md-button }
 

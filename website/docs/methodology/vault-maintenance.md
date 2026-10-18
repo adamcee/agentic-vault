@@ -4,11 +4,11 @@ A vault needs occasional upkeep, and the agent does most of it. Two protocols an
 
 ## Plan Triage
 
-Run it when the ledger passes about 200 open items, after a major change in direction, or quarterly. The agent checks each item against the logs and files, marks done and superseded items, flags overdue ones, moves reference material out of the plan, and records before-and-after counts. It never reprioritizes; that's your call.
+Run it when the ledger passes about 200 open items, after a major change in direction, or quarterly. The agent checks each item against the logs and files, marks done and superseded items, flags overdue ones, moves reference material out of the plan, and records before-and-after counts, but it never reprioritizes; that's your call.
 
 ## Vault Review
 
-Run it quarterly or after a long break. The review audits six areas: structure, decisions, writing discipline, drafts and the ledger, research and links, and lifecycle (stale ideas, docs due for archive). It can run as parallel read-only subagents.
+Run it quarterly or after a long break. The review audits six areas, and it can run them as parallel read-only subagents: structure, decisions, writing discipline, drafts and the ledger, research and links, and lifecycle (stale ideas, docs due for archive).
 
 Mechanical fixes happen in the same session. Anything that needs a decision goes to the ledger for you; findings never go into a standalone report, because report files go stale.
 
