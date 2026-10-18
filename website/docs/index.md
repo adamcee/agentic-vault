@@ -6,21 +6,20 @@ AI models forget everything between chats. On a project that lasts weeks or mont
 
 The Agentic Vault is a folder of markdown files and a few rules that fix this. Your decisions, research, and plans live in the folder, and every AI session reads it first.
 
-## See It in Action
+[Quickstart](installation/quickstart.md){ .md-button .md-button--primary } [Obsidian Setup](installation/obsidian-setup.md){ .md-button }
 
-Two example vaults show the method on fictional projects. Each repo holds the vault's actual files, which you can clone and open in Obsidian like your own; each website shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
+The Quickstart includes a prompt your AI can use to set everything up with you, even if you've never used GitHub or a terminal.
 
-!!! example "Night Post: an indie RPG, six months in"
-    A three-person team is making an adventure game about a night courier. The vault holds decisions that changed after playtests, market and accessibility research, a world bible, and the agents' session logs.
+## Example Vaults
 
-    [Explore the site](https://adamcee.github.io/night-post-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/night-post-vault){ .md-button }
+Each example is a GitHub repo holding the vault's actual files, which you can clone and open in Obsidian like your own. Each also has a website that shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
 
-!!! example "Curbside Cycles: a small business, five weeks in"
-    A mechanic runs a one-person bike-repair van, with no software involved. The vault holds a survey, a pilot month that changed the pricing, and a rejected storefront lease.
+| Example | What's inside | Explore | Files |
+|---|---|---|---|
+| **Night Post**: an indie RPG, six months in | Decisions changed by playtests, market and accessibility research, a world bible, session logs | [Website](https://adamcee.github.io/night-post-vault/) | [Repo](https://github.com/adamcee/night-post-vault) |
+| **Curbside Cycles**: a small business, five weeks in | A survey, a pricing pilot, a rejected storefront lease, no software | [Website](https://adamcee.github.io/curbside-cycles-vault/) | [Repo](https://github.com/adamcee/curbside-cycles-vault) |
 
-    [Explore the site](https://adamcee.github.io/curbside-cycles-vault/){ .md-button .md-button--primary } [View the repo](https://github.com/adamcee/curbside-cycles-vault){ .md-button }
-
-The websites exist only to make the examples easy to browse; your own vault doesn't need one. If you want, you can publish all or part of yours the same way.
+The websites exist only to make the examples easy to browse; your own vault doesn't need one, though you can publish all or part of it the same way.
 
 ## Every Session Starts Up to Speed
 
@@ -50,5 +49,3 @@ Over time the vault becomes your project's [knowledge base](https://en.wikipedia
 The rules weren't designed up front. They were added one at a time during months of AI-assisted work on a real project, each to fix a problem that kept recurring ([Design & Goals](methodology/design-and-goals.md)).
 
 Your vault can grow the same way. When you spot a problem or a better way of working, tell your AI to add a rule: it goes in `AGENTS.md` or a page in `vault-guide/`, and every later session follows it.
-
-Start with the [Quickstart](installation/quickstart.md), which includes a prompt your AI can use to set everything up with you.

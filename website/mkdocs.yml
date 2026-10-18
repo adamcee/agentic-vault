@@ -42,7 +42,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Explore a Real Vault: https://adamcee.github.io/night-post-vault/
+  - Examples: examples.md
   - Installation:
     - Quickstart: installation/quickstart.md
     - Obsidian Setup (Recommended): installation/obsidian-setup.md
@@ -63,4 +63,3 @@ nav:
     - Vault Maintenance: methodology/vault-maintenance.md
     - AI Writing Discipline: methodology/writing-discipline.md
     - Sources & Further Reading: methodology/sources.md
-  - Examples: examples.md

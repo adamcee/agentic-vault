@@ -8,6 +8,8 @@ The Agentic Vault is a folder of markdown files and a few rules that fix this. Y
 
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for any AI agent to search.
 
+**Get started:** the [Quickstart](website/docs/installation/quickstart.md) includes a prompt your AI can use to set everything up with you, even if you've never used GitHub or a terminal.
+
 ## See It in Action
 
 Two example vaults show the method on fictional projects. Each repo holds the vault's actual files, which you can clone and open in Obsidian like your own; each website shows the same files with graph view, backlinks, and search, so you can explore without installing anything.
