@@ -19,6 +19,12 @@ Two example vaults show the method on fictional projects. Each repo holds the va
 
 The websites exist only to make the examples easy to browse; your own vault doesn't need one, though you can publish all or part of it the same way.
 
+## Every Session Starts Up to Speed
+
+The `vault-start` skill is what makes this work day to day. At the start of every conversation, the agent runs it: it reads `AGENTS.md`, finds what changed since the last session, asks what kind of work you're doing, and loads the files that work needs.
+
+That holds whether you're chatting with an assistant or running an autonomous agent with no one watching. Claude Code runs the skill because `CLAUDE.md` tells it to, you can also type `/vault-start`, and agents without skills follow the same steps from the Session Start Protocol in `AGENTS.md`.
+
 ## How It Works
 
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
