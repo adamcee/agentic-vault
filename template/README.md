@@ -4,6 +4,8 @@
 
 Every AI session reads this vault first, so your agents remember the decisions you've made, the evidence behind them, and what's already done. Without it, AI tools forget everything between sessions and reopen questions you already settled.
 
+The vault is built for your agents to manage. They keep it current on their own, and guardrails let them contribute and make decisions safely: hard constraints they can't break, your approval before any decision is written, a staging area for their drafts, and logs they can only add to.
+
 Over time it becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base) (or [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science))): plain markdown you own, read, and edit, tracked with git and searchable by any AI tool.
 
 ## How It Works
@@ -12,8 +14,9 @@ Over time it becomes your project's [knowledge base](https://en.wikipedia.org/wi
 2. **`AGENTS.md` is the single source of truth.** Every AI tool reads it before acting.
 3. **Decision records (ADRs and PDRs)** record what you chose, what you rejected, and why.
 4. **Research traceability.** Empirical claims link to research docs in the vault, not to the AI's memory.
-5. **The agent maintains the vault.** Protocols in `AGENTS.md` tell the agent to log sessions, propagate decisions, recheck decisions against new evidence, and fix links, so you don't have to.
-6. **Writing discipline.** Documents put the main point first and cut AI filler, so they're quick for you to read and use, and the AI can load more of the vault at once.
+5. **Agents manage the vault.** Protocols in `AGENTS.md` tell the agent to log sessions, propagate decisions, recheck decisions against new evidence, and fix links, so you don't have to.
+6. **Guardrails.** Agents work within limits you set: hard constraints in `AGENTS.md` and `CONSTITUTION.md`, an approval step before any decision record is written, `drafts/` for unreviewed AI writing, append-only logs, and a `journal/` folder agents never touch.
+7. **Writing discipline.** Documents put the main point first and cut AI filler, so they're quick for you to read and use, and the AI can load more of the vault at once.
 
 ## Setup
 

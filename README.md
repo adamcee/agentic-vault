@@ -4,6 +4,8 @@
 
 Every AI session reads the vault first, so your agents remember the decisions you've made, the evidence behind them, and what's already done. Without it, AI models forget everything between chats: they suggest ideas you already rejected and need the project re-explained every time.
 
+The vault is built for your agents to manage. They keep it current on their own, and guardrails let them contribute and make decisions safely: hard constraints they can't break, your approval before any decision is written, a staging area for their drafts, and logs they can only add to.
+
 Over time the vault becomes your project's [knowledge base](https://en.wikipedia.org/wiki/Knowledge_base), sometimes called an [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)): the decisions, evidence, terms, and plans that define the project, and the links between them. It's plain markdown that you own, so it works in Obsidian or any editor, tracks changes with git, and is easy for any AI agent to search.
 
 **Get started:** the [Quickstart](website/docs/installation/quickstart.md) includes a prompt your AI can use to set everything up with you, even if you've never used GitHub or a terminal.
@@ -30,8 +32,9 @@ That holds whether you're chatting with an assistant or running an autonomous ag
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
 2. **One master file.** `AGENTS.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every AI session reads it first.
 3. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why. You can write one yourself or have the AI draft it, and every later session reads it before proposing changes.
-4. **The agent maintains the vault.** Built-in rules tell the agent to log each session, update the plan after each decision, check old decisions against new evidence, and fix broken links. That busywork moves off your plate, so you can focus on the decisions and work with the agent however suits you.
-5. **Writing discipline.** Vault documents put the main point first and cut AI filler. That makes them faster for you to read and act on, and lets the AI load more of the project at once.
+4. **Agents manage the vault.** Built-in rules tell the agent to log each session, update the plan after each decision, check old decisions against new evidence, and fix broken links. That busywork moves off your plate, so you can focus on the decisions and work with the agent however suits you.
+5. **Guardrails.** Agents work within limits you set: hard constraints in `AGENTS.md` and `CONSTITUTION.md`, an approval step before any decision record is written, `drafts/` for unreviewed AI writing, append-only logs, and a `journal/` folder agents never touch.
+6. **Writing discipline.** Vault documents put the main point first and cut AI filler. That makes them faster for you to read and act on, and lets the AI load more of the project at once.
 
 ## What It Lets You Do
 
