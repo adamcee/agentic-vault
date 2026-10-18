@@ -169,9 +169,11 @@ AI writes authoritative-sounding prose about anything. The vault's answer is to 
 
 An unsourced claim isn't necessarily wrong, but the flag tells future sessions it hasn't been checked. An `[emerging]` tag marks a bet to revisit when replication arrives.
 
-### 4.4. Obligations on Both Sides
+### 4.4. You Decide, the Agent Maintains
 
-You maintain the vault: write the decision records, run the protocols, tighten the drafts. The AI reads the vault first, respects standing decisions, proposes superseding records instead of silently contradicting them, and runs its output through the checklist.
+You set direction and make the calls: approve or reject decision records, choose what to work on, and review what the AI flags. Your own notes live in `journal/` and your task list, which the AI never writes.
+
+The agent does the upkeep. It starts every session up to speed with `vault-start`, drafts decision records for your approval, runs the protocols (propagation, reweave, session logs, link checks), tightens its own writing, and proposes a superseding record instead of quietly contradicting a standing decision.
 
 ### 4.5. Start Small
 
