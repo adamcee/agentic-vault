@@ -2,9 +2,14 @@ site_name: The Agentic Vault
 site_description: A markdown vault template that gives AI sessions persistent project memory.
 site_author: The Crusty Engineer
 site_url: https://adamcee.github.io/agentic-vault/
+repo_url: https://github.com/adamcee/agentic-vault
+repo_name: adamcee/agentic-vault
+edit_uri: ""
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.sections
