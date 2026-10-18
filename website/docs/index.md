@@ -32,7 +32,7 @@ That holds whether you're chatting with an assistant or running an autonomous ag
 
 1. **Plain markdown files.** Everything is a text file you can read and edit yourself, in any editor.
 2. **One master file.** `AGENTS.md` holds the project's goals, hard constraints, current phase, and standing decisions. Every session reads it first.
-3. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why. The AI checks these before proposing changes.
+3. **Decision records.** Each major decision gets a short document recording what was chosen, what was rejected, and why. You can write one yourself or have the AI draft it, and every later session reads it before proposing changes.
 4. **The agent maintains the vault.** Built-in rules tell the agent to log each session, update the plan after each decision, check old decisions against new evidence, and fix broken links. That busywork moves off your plate, so you can focus on the decisions and work with the agent however suits you.
 5. **Writing discipline.** Vault documents put the main point first and cut AI filler. That makes them faster for you to read and act on, and lets the AI load more of the project at once.
 

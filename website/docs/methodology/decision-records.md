@@ -8,9 +8,13 @@ A fresh AI session has no record of past decisions, so it reopens them. If you r
 
 An ADR stating "MongoDB was rejected because of X" stops this. The AI reads the record and works within it.
 
+## Who Writes Them
+
+You and the AI both write decision records. Write one yourself whenever you make a call, or have the AI draft it; it's the same file either way.
+
 ## Review Before Writing
 
-A decision record is drafted in chat first: the AI lists three alternatives with one-line tradeoffs, drafts the record, and revises it with you, usually over two to four rounds. It writes the file only after you approve.
+When the AI drafts a record, it does so in chat first: the AI lists three alternatives with one-line tradeoffs, drafts the record, and revises it with you, usually over two to four rounds. It writes the file only after you approve.
 
 ## Status
 
