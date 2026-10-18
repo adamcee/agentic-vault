@@ -40,7 +40,7 @@ That holds whether you're chatting with an assistant or running an autonomous ag
 - **Build a knowledge base you own.** The vault grows into a linked map of your project in plain files that no vendor controls.
 - **Stop and restart sessions freely.** Each session records where it left off. The next one picks up from there, even after weeks away.
 - **Use any kind of AI agent.** Coding agents, agents that draft marketing copy, research assistants, and personal assistants can all work from the same vault.
-- **Use several AI tools on one project.** Claude Code, Codex, Gemini CLI, Cursor, and chat apps all read the same master file, `AGENTS.md`.
+- **Use several AI tools on one project.** Claude Code, Codex, Antigravity CLI, Cursor, and chat apps all read the same master file, `AGENTS.md`.
 - **Keep settled questions settled.** Decisions and rejected alternatives are written down, so the AI stops reopening them.
 - **Tie decisions to evidence.** Claims link to the research behind them. When new evidence arrives, you can find the decisions it affects.
 - **Plan in one place and build in another.** Coding agents in separate code repos can read the vault for constraints and decisions.
@@ -51,6 +51,7 @@ That holds whether you're chatting with an assistant or running an autonomous ag
 ```text
 /
 ├── template/   ← The vault template. Copy this to start a project.
+├── scripts/    ← sync-examples.py keeps the example vault repos in step with the template.
 └── website/    ← Source for the documentation site (see website/README.md to run it).
 ```
 
@@ -76,13 +77,13 @@ The tiers below cover other ways to work. You can move up a tier later.
 
 1. Run `./template/scripts/init-vault.sh my-new-project`.
 2. Fill in `AGENTS.md`.
-3. Open `my-new-project` in your IDE. Cursor and Windsurf read `AGENTS.md`, and the included `.cursorrules` and `.windsurfrules` point to it as a fallback.
+3. Open `my-new-project` in your IDE. Cursor reads `AGENTS.md` directly, and the included `.windsurfrules` points Windsurf to it.
 
-### Tier 3: CLI agents (Claude Code, Codex, Gemini CLI)
+### Tier 3: CLI agents (Claude Code, Codex, Antigravity CLI)
 
 1. Run `./template/scripts/init-vault.sh my-new-project`.
 2. Fill in `AGENTS.md` and `architecture/CONSTITUTION.md`.
-3. Run `claude`, `codex`, or `gemini` from the project folder. Codex reads `AGENTS.md` directly; `CLAUDE.md` and `GEMINI.md` import it.
+3. Run `claude`, `codex`, or `agy` (Antigravity CLI, which replaced Gemini CLI for individual accounts) from the project folder. Codex and Antigravity read `AGENTS.md` directly; `CLAUDE.md` imports it for Claude Code.
 
 ## Setup Wizard
 

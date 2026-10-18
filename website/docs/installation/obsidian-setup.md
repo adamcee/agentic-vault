@@ -30,7 +30,7 @@ Go one step at a time and wait for me to confirm before moving on.
 - **Obsidian** opens that folder as a vault. You read, edit, link, and search notes there, and see the graph of how they connect.
 - **An MCP server** runs alongside Obsidian and gives AI apps access to the vault's files and search.
 - **Your AI app** (Claude Desktop, the Codex app, or any MCP-capable tool) connects to that server. Every chat can read `AGENTS.md`, search notes, and create or update files.
-- **CLI agents** (Claude Code, Codex CLI, Gemini CLI) can skip MCP and work on the files directly from a terminal in the vault folder.
+- **CLI agents** (Claude Code, Codex CLI, Antigravity CLI) can skip MCP and work on the files directly from a terminal in the vault folder.
 - **GitHub** holds a private copy of the vault as a git repository, for backup and history.
 
 Because everything is plain files, you and the AI always see the same vault. An edit you make in Obsidian is there for the AI's next read, and a file the AI writes shows up in Obsidian right away.
@@ -39,7 +39,7 @@ Because everything is plain files, you and the AI always see the same vault. An 
 
 1. Install Obsidian and open your vault folder with **Open folder as vault**.
 2. Install the community plugins below. At minimum, install **Local REST API with MCP** and **Omnisearch**.
-3. Add the vault's MCP server to your AI app's MCP settings, using the connection details the plugin shows.
+3. Add the vault's MCP server to your AI app's MCP settings. The plugin serves it at `/mcp` on its local address (by default `https://127.0.0.1:27124/mcp`) and shows the API key to use in its settings.
 4. Back the vault up to GitHub (next section).
 5. Start a chat and ask the AI to read `AGENTS.md`. It should report the current phase and last session.
 

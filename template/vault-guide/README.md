@@ -1,3 +1,7 @@
+---
+date: YYYY-MM-DD
+tags: [vault-guide, index]
+---
 # Vault Guide
 
 These pages explain how the vault works and why: the design rationale, the canonical protocol pages, and the style guides for all vault writing. When a protocol summary in [[AGENTS]] differs from its page here, the page wins.

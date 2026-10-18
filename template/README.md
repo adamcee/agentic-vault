@@ -26,13 +26,13 @@ Over time it becomes your project's [knowledge base](https://en.wikipedia.org/wi
 
 1. Run `./scripts/init-vault.sh my-new-project`.
 2. Fill in `AGENTS.md`.
-3. Open `my-new-project` in your IDE. Cursor and Windsurf read `AGENTS.md`, and the included `.cursorrules` and `.windsurfrules` point to it as a fallback.
+3. Open `my-new-project` in your IDE. Cursor reads `AGENTS.md` directly, and the included `.windsurfrules` points Windsurf to it.
 
-### Tier 3: CLI agents (Claude Code, Gemini CLI)
+### Tier 3: CLI agents (Claude Code, Codex, Antigravity CLI)
 
 1. Run `./scripts/init-vault.sh my-new-project`.
 2. Fill in `AGENTS.md` and `architecture/CONSTITUTION.md`.
-3. Run `claude`, `gemini`, or `codex` from the project folder. Codex reads `AGENTS.md` directly; `CLAUDE.md` and `GEMINI.md` import it.
+3. Run `claude`, `codex`, or `agy` (Antigravity CLI) from the project folder. Codex and Antigravity read `AGENTS.md` directly; `CLAUDE.md` imports it for Claude Code.
 
 ## Setup Wizard
 

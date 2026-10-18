@@ -9,7 +9,7 @@ Every substantive session starts with the same four steps, so a new session begi
 3. **Ask what kind of session this is**, such as planning, research, or coding.
 4. **Load the context the task needs.** A coding session needs the design docs and relevant ADRs. A strategy session needs the strategy docs. `AGENTS.md` lists which files go with which kind of work.
 
-The template's `vault-start` skill runs these steps as tool calls, so a session can't skip them by working from memory. Claude Code runs it automatically through `CLAUDE.md`, you can type `/vault-start`, and Gemini CLI can link the same skill; agents without skills follow the steps as written in `AGENTS.md`.
+The template's `vault-start` skill runs these steps as tool calls, so a session can't skip them by working from memory. Claude Code runs it automatically through `CLAUDE.md`, you can type `/vault-start`, and Antigravity CLI finds it once `.agents/skills` links to the same folder; agents without skills follow the steps as written in `AGENTS.md`.
 
 ## Why Not Just Explain the Project Each Time
 

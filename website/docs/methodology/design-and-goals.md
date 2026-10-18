@@ -225,7 +225,7 @@ The method combines existing practices and adapts them for AI-assisted work.
 - **Military correspondence doctrine.** BLUF, Commander's Intent, and brevity.
 - **Ars Contexta.** [agenticnotetaking/arscontexta](https://github.com/agenticnotetaking/arscontexta), an AI vault generator. Wikilink discipline and the reweave protocol were adapted from it. The vault relies more on human tightening than on auto-generation.
 - **Obsidian.** [obsidian.md](https://obsidian.md), the main editor the vault is built around. Plain markdown with YAML frontmatter keeps the vault usable in any editor.
-- **AI coding tools.** [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), and [Gemini CLI](https://github.com/google-gemini/gemini-cli) motivated the multi-tool requirements.
+- **AI coding tools.** [Cursor](https://cursor.com), [Windsurf](https://windsurf.com), [Claude Code](https://docs.claude.com/en/docs/claude-code/overview), and Gemini CLI (now [Antigravity CLI](https://antigravity.google/docs/cli/gcli-migration)) motivated the multi-tool requirements.
 - **Model Context Protocol.** [MCP](https://modelcontextprotocol.io) gives desktop AI apps read and write access to the vault.
 
 As far as we know, this particular combination is new: decision records tied to propagation and reweave, an ingestion gate for AI content, and maturity tags on evidence. The individual parts are not.
