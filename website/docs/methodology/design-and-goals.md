@@ -169,11 +169,11 @@ AI writes authoritative-sounding prose about anything. The vault's answer is to 
 
 An unsourced claim isn't necessarily wrong, but the flag tells future sessions it hasn't been checked. An `[emerging]` tag marks a bet to revisit when replication arrives.
 
-### 4.4. You Decide, the Agent Maintains
+### 4.4. Who Does What
 
-You set direction and make the calls: approve or reject decision records, choose what to work on, and review what the AI flags. Your own notes live in `journal/` and your task list, which the AI never writes.
+You and the AI both write to the vault, including decision records. You can write a record yourself in Obsidian, or ask the AI to draft one; either way it's the same file, in the same format, and every later session reads it.
 
-The agent does the upkeep. It starts every session up to speed with `vault-start`, drafts decision records for your approval, runs the protocols (propagation, reweave, session logs, link checks), tightens its own writing, and proposes a superseding record instead of quietly contradicting a standing decision.
+You make the calls: you approve or reject the AI's drafts and choose what to work on. The AI does the upkeep: it starts each session up to speed with `vault-start`, runs the protocols (propagation, reweave, session logs, link checks), and proposes a superseding record instead of quietly contradicting a standing decision.
 
 ### 4.5. Start Small
 
