@@ -82,6 +82,6 @@ To have the AI fill in the template, paste `template/SETUP_WIZARD.md` into your 
 
 ## Built From Real Work, Shaped to Yours
 
-The rules weren't designed up front. They were added one at a time during months of AI-assisted work on a real project, each to fix a problem that kept recurring. [Design & Goals](website/docs/methodology/design-and-goals.md) covers the failures, the protocols, and what worked.
+The rules weren't designed up front. They were added one at a time during months of AI-assisted work on a real project, each to fix a problem that kept recurring ([Design & Goals](website/docs/methodology/design-and-goals.md)).
 
 Your vault can grow the same way. When you spot a problem or a better way of working, tell your AI to add a rule: it goes in `AGENTS.md` or a page in `vault-guide/`, and every later session follows it.
